@@ -1,0 +1,1191 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0948784C7D9EA2E53A81BC2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12DF8F2ECDC2D733CB17B993 /* libPods.a */; };
+		BC20766D1C46667500111CD3 /* YLDrawPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BC20766C1C46667500111CD3 /* YLDrawPieChart.m */; };
+		BC2076711C46678D00111CD3 /* YLDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076701C46678D00111CD3 /* YLDataBaseManager.m */; };
+		BC2076DF1C46787200111CD3 /* YLCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076DE1C46787200111CD3 /* YLCostModel.m */; };
+		BC2076E21C46799200111CD3 /* YLGetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076E11C46799200111CD3 /* YLGetModel.m */; };
+		BC2076E51C4681B400111CD3 /* half_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2076E41C4681B400111CD3 /* half_bg@2x.png */; };
+		BC2076E91C4728E700111CD3 /* YLCostButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076E81C4728E700111CD3 /* YLCostButton.m */; };
+		BC2076EC1C47294F00111CD3 /* YLCostView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076EB1C47294F00111CD3 /* YLCostView.m */; };
+		BC2076EF1C474C6200111CD3 /* addButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2076EE1C474C6200111CD3 /* addButton@2x.png */; };
+		BC2076F11C477D5C00111CD3 /* doneBuBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2076F01C477D5C00111CD3 /* doneBuBG.png */; };
+		BC2076F31C478B7500111CD3 /* halfDownBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2076F21C478B7500111CD3 /* halfDownBG.png */; };
+		BC22F09E1C531B6E007F715A /* YLLetfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC22F09C1C531B6E007F715A /* YLLetfViewController.m */; };
+		BC22F09F1C531B6E007F715A /* YLLetfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC22F09D1C531B6E007F715A /* YLLetfViewController.xib */; };
+		BC22F0A11C532668007F715A /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC22F0A01C532668007F715A /* Icon-60@2x.png */; };
+		BC22F0A51C53286A007F715A /* YLAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC22F0A31C53286A007F715A /* YLAboutUsViewController.m */; };
+		BC22F0A61C53286A007F715A /* YLAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC22F0A41C53286A007F715A /* YLAboutUsViewController.xib */; };
+		BC22F0A91C533001007F715A /* YLGetModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC22F0A81C533001007F715A /* YLGetModelViewController.m */; };
+		BC22F0AC1C533016007F715A /* YLCostModelSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC22F0AB1C533016007F715A /* YLCostModelSetViewController.m */; };
+		BC22F0B01C534273007F715A /* YLMyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC22F0AF1C534273007F715A /* YLMyCollectionViewCell.m */; };
+		BC22F0B21C534444007F715A /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC22F0B11C534444007F715A /* close@2x.png */; };
+		BC487DF31C3E5F9800C7C994 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC487DF21C3E5F9800C7C994 /* bg1.jpg */; };
+		BC487DF81C3E877E00C7C994 /* YLCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC487DF71C3E877E00C7C994 /* YLCenterView.m */; };
+		BC487DFA1C3E947300C7C994 /* orange_color.png in Resources */ = {isa = PBXBuildFile; fileRef = BC487DF91C3E947300C7C994 /* orange_color.png */; };
+		BC56E8EF1C4F7265003FB734 /* YLCostVew.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E8EE1C4F7265003FB734 /* YLCostVew.m */; };
+		BC56E8F11C4F76EA003FB734 /* COST_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC56E8F01C4F76EA003FB734 /* COST_bg.png */; };
+		BC56E8F31C4F775E003FB734 /* cost_bg_up.png in Resources */ = {isa = PBXBuildFile; fileRef = BC56E8F21C4F775E003FB734 /* cost_bg_up.png */; };
+		BC56E8F61C4F7CE4003FB734 /* YLGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E8F51C4F7CE4003FB734 /* YLGetViewController.m */; };
+		BC56E8F81C4FACF1003FB734 /* button_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC56E8F71C4FACF1003FB734 /* button_bg.png */; };
+		BC56E8FD1C4FB818003FB734 /* YLDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E8FC1C4FB818003FB734 /* YLDetailView.m */; };
+		BC589FB01C4C6B89008889C3 /* YLTimeDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = BC589FAF1C4C6B89008889C3 /* YLTimeDeal.m */; };
+		BC589FBB1C4CBA7A008889C3 /* yusuanup.png in Resources */ = {isa = PBXBuildFile; fileRef = BC589FBA1C4CBA7A008889C3 /* yusuanup.png */; };
+		BC589FC41C4CE324008889C3 /* YLBudgetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC589FC31C4CE324008889C3 /* YLBudgetTableViewCell.m */; };
+		BC589FCB1C4CEBAA008889C3 /* YLBudgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC589FCA1C4CEBAA008889C3 /* YLBudgeModel.m */; };
+		BC5E125E1C50709F0079AA42 /* YLDataDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5E125D1C50709F0079AA42 /* YLDataDeal.m */; };
+		BC5E12611C507D9E0079AA42 /* YLDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5E12601C507D9E0079AA42 /* YLDetailTableViewCell.m */; };
+		BC5E12631C50B40F0079AA42 /* budget_bg_d.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5E12621C50B40F0079AA42 /* budget_bg_d.png */; };
+		BC5E12661C50C2D80079AA42 /* YLColoers.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5E12651C50C2D80079AA42 /* YLColoers.m */; };
+		BC5E126A1C50CDB40079AA42 /* YLPieReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5E12691C50CDB40079AA42 /* YLPieReportView.m */; };
+		BC5E126C1C50D0E80079AA42 /* report__bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5E126B1C50D0E80079AA42 /* report__bg.png */; };
+		BC5E126F1C50D85C0079AA42 /* left_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5E126E1C50D85C0079AA42 /* left_bg.png */; };
+		BC5E12711C50D85F0079AA42 /* right_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5E12701C50D85F0079AA42 /* right_bg.png */; };
+		BC5E13301C51C4EB0079AA42 /* YLDatePieChartNeed.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5E132F1C51C4EB0079AA42 /* YLDatePieChartNeed.m */; };
+		BC5E13481C51FB8B0079AA42 /* YLPieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5E13471C51FB8B0079AA42 /* YLPieModel.m */; };
+		BC5E135A1C524A750079AA42 /* YLRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5E13581C524A750079AA42 /* YLRightViewController.m */; };
+		BC5E135B1C524A750079AA42 /* YLRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5E13591C524A750079AA42 /* YLRightViewController.xib */; };
+		BC5E135D1C524E400079AA42 /* scrollBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5E135C1C524E400079AA42 /* scrollBG.png */; };
+		BC5E13611C52595E0079AA42 /* cost.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5E13601C52595E0079AA42 /* cost.png */; };
+		BC617A171C525E2700E3D50F /* set_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC617A161C525E2700E3D50F /* set_bg.png */; };
+		BC65E0CA1C448AD600C44BC6 /* YLCostOneTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC65E0C91C448AD600C44BC6 /* YLCostOneTimeViewController.m */; };
+		BC65E0CD1C448B1100C44BC6 /* YLGetOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC65E0CC1C448B1100C44BC6 /* YLGetOneViewController.m */; };
+		BC65E0CF1C4490FA00C44BC6 /* navigationbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC65E0CE1C4490FA00C44BC6 /* navigationbar@2x.png */; };
+		BC65E0D11C44955800C44BC6 /* yusuan.png in Resources */ = {isa = PBXBuildFile; fileRef = BC65E0D01C44955800C44BC6 /* yusuan.png */; };
+		BC65E0D51C4499D500C44BC6 /* YLBudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC65E0D41C4499D500C44BC6 /* YLBudgetViewController.m */; };
+		BC660B321C56328C00813A69 /* buttonbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC660B311C56328C00813A69 /* buttonbar@2x.png */; };
+		BC660B341C5634A100813A69 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC660B331C5634A100813A69 /* bg2.png */; };
+		BC660B361C56356100813A69 /* button_barbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC660B351C56356100813A69 /* button_barbar.png */; };
+		BC660B381C5637A000813A69 /* cellBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BC660B371C5637A000813A69 /* cellBG.png */; };
+		BC660B3A1C563D4A00813A69 /* button_budget.png in Resources */ = {isa = PBXBuildFile; fileRef = BC660B391C563D4A00813A69 /* button_budget.png */; };
+		BC660B3D1C563E2D00813A69 /* YLHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC660B3C1C563E2D00813A69 /* YLHintView.m */; };
+		BC6686BF1C55CB80004E086D /* YLRESideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6686BE1C55CB80004E086D /* YLRESideViewController.m */; };
+		BC6686C31C560CC8004E086D /* button_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6686C21C560CC8004E086D /* button_bar.png */; };
+		BC6686C61C560D16004E086D /* YLCostModelKindSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6686C51C560D16004E086D /* YLCostModelKindSetViewController.m */; };
+		BC6686C91C5618FB004E086D /* YLSonOfCostModelSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6686C81C5618FB004E086D /* YLSonOfCostModelSetViewController.m */; };
+		BC6686CD1C56280F004E086D /* most_pretty.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6686CC1C56280F004E086D /* most_pretty.png */; };
+		BC7911931C451FDD003996F2 /* YLNsuserD.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7911921C451FDD003996F2 /* YLNsuserD.m */; };
+		BC8B1B4C1C3D14AC00665523 /* bg5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B2D1C3D14AC00665523 /* bg5.jpg */; };
+		BC8B1B521C3D14AC00665523 /* mingxi.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B341C3D14AC00665523 /* mingxi.png */; };
+		BC8B1B531C3D14AC00665523 /* shouru@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B351C3D14AC00665523 /* shouru@2x.png */; };
+		BC8B1B561C3D14AC00665523 /* tubiao.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B381C3D14AC00665523 /* tubiao.png */; };
+		BC8B1B581C3D14AC00665523 /* yuyin.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B3A1C3D14AC00665523 /* yuyin.png */; };
+		BC8B1B591C3D14AC00665523 /* zhicu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B3B1C3D14AC00665523 /* zhicu@2x.png */; };
+		BC8B1B6B1C3D300900665523 /* fenlan.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B6A1C3D300900665523 /* fenlan.png */; };
+		BC8B1B6E1C3D311400665523 /* YLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8B1B6D1C3D311400665523 /* YLProgressView.m */; };
+		BC8B1B731C3D3A5B00665523 /* navi_back.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B721C3D3A5B00665523 /* navi_back.png */; };
+		BC8B1B7A1C3D44D200665523 /* budget.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B791C3D44D200665523 /* budget.png */; };
+		BC8B1B7C1C3D44D500665523 /* white_back.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8B1B7B1C3D44D500665523 /* white_back.png */; };
+		BC92D8A61C43D91200ADB6A8 /* YLCostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC92D8A51C43D91200ADB6A8 /* YLCostViewController.m */; };
+		BC92D8AC1C43D94B00ADB6A8 /* YLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC92D8AB1C43D94B00ADB6A8 /* YLDetailViewController.m */; };
+		BC92D8AF1C43D99A00ADB6A8 /* YLReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC92D8AE1C43D99A00ADB6A8 /* YLReportViewController.m */; };
+		BC92D8B21C43DA2200ADB6A8 /* YLMumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC92D8B11C43DA2200ADB6A8 /* YLMumViewController.m */; };
+		BC92D8B81C43DB1E00ADB6A8 /* YLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC92D8B71C43DB1E00ADB6A8 /* YLMainViewController.m */; };
+		BCEAAA501C3BD9F100CEB816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAA4F1C3BD9F100CEB816 /* main.m */; };
+		BCEAAA531C3BD9F100CEB816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAA521C3BD9F100CEB816 /* AppDelegate.m */; };
+		BCEAAA591C3BD9F100CEB816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEAAA571C3BD9F100CEB816 /* Main.storyboard */; };
+		BCEAAA5B1C3BD9F100CEB816 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEAAA5A1C3BD9F100CEB816 /* Images.xcassets */; };
+		BCEAAA5E1C3BD9F100CEB816 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEAAA5C1C3BD9F100CEB816 /* LaunchScreen.xib */; };
+		BCEAAA6A1C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAA691C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.m */; };
+		BCEAAAF91C3BEC8900CEB816 /* YLfirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAAF81C3BEC8900CEB816 /* YLfirstView.m */; };
+		BCEAAAFC1C3BEE6F00CEB816 /* YLMyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAAFB1C3BEE6F00CEB816 /* YLMyButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCEAAA641C3BD9F100CEB816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCEAAA421C3BD9F100CEB816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCEAAA491C3BD9F100CEB816;
+			remoteInfo = YLPrivateFinancialManagement;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12DF8F2ECDC2D733CB17B993 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B329C2A3488D76A122E03942 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BC20766B1C46667500111CD3 /* YLDrawPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDrawPieChart.h; sourceTree = "<group>"; };
+		BC20766C1C46667500111CD3 /* YLDrawPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDrawPieChart.m; sourceTree = "<group>"; };
+		BC20766F1C46678D00111CD3 /* YLDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDataBaseManager.h; sourceTree = "<group>"; };
+		BC2076701C46678D00111CD3 /* YLDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDataBaseManager.m; sourceTree = "<group>"; };
+		BC2076DD1C46787200111CD3 /* YLCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostModel.h; sourceTree = "<group>"; };
+		BC2076DE1C46787200111CD3 /* YLCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostModel.m; sourceTree = "<group>"; };
+		BC2076E01C46799200111CD3 /* YLGetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGetModel.h; sourceTree = "<group>"; };
+		BC2076E11C46799200111CD3 /* YLGetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGetModel.m; sourceTree = "<group>"; };
+		BC2076E41C4681B400111CD3 /* half_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "half_bg@2x.png"; sourceTree = "<group>"; };
+		BC2076E71C4728E700111CD3 /* YLCostButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostButton.h; sourceTree = "<group>"; };
+		BC2076E81C4728E700111CD3 /* YLCostButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostButton.m; sourceTree = "<group>"; };
+		BC2076EA1C47294F00111CD3 /* YLCostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostView.h; sourceTree = "<group>"; };
+		BC2076EB1C47294F00111CD3 /* YLCostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostView.m; sourceTree = "<group>"; };
+		BC2076EE1C474C6200111CD3 /* addButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addButton@2x.png"; sourceTree = "<group>"; };
+		BC2076F01C477D5C00111CD3 /* doneBuBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doneBuBG.png; sourceTree = "<group>"; };
+		BC2076F21C478B7500111CD3 /* halfDownBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfDownBG.png; sourceTree = "<group>"; };
+		BC22F09B1C531B6E007F715A /* YLLetfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLetfViewController.h; sourceTree = "<group>"; };
+		BC22F09C1C531B6E007F715A /* YLLetfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLetfViewController.m; sourceTree = "<group>"; };
+		BC22F09D1C531B6E007F715A /* YLLetfViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLLetfViewController.xib; sourceTree = "<group>"; };
+		BC22F0A01C532668007F715A /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		BC22F0A21C53286A007F715A /* YLAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAboutUsViewController.h; sourceTree = "<group>"; };
+		BC22F0A31C53286A007F715A /* YLAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAboutUsViewController.m; sourceTree = "<group>"; };
+		BC22F0A41C53286A007F715A /* YLAboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLAboutUsViewController.xib; sourceTree = "<group>"; };
+		BC22F0A71C533001007F715A /* YLGetModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGetModelViewController.h; sourceTree = "<group>"; };
+		BC22F0A81C533001007F715A /* YLGetModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGetModelViewController.m; sourceTree = "<group>"; };
+		BC22F0AA1C533016007F715A /* YLCostModelSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostModelSetViewController.h; sourceTree = "<group>"; };
+		BC22F0AB1C533016007F715A /* YLCostModelSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostModelSetViewController.m; sourceTree = "<group>"; };
+		BC22F0AE1C534273007F715A /* YLMyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMyCollectionViewCell.h; sourceTree = "<group>"; };
+		BC22F0AF1C534273007F715A /* YLMyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMyCollectionViewCell.m; sourceTree = "<group>"; };
+		BC22F0B11C534444007F715A /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		BC487DF21C3E5F9800C7C994 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
+		BC487DF61C3E877E00C7C994 /* YLCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCenterView.h; sourceTree = "<group>"; };
+		BC487DF71C3E877E00C7C994 /* YLCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCenterView.m; sourceTree = "<group>"; };
+		BC487DF91C3E947300C7C994 /* orange_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_color.png; sourceTree = "<group>"; };
+		BC56E8ED1C4F7265003FB734 /* YLCostVew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostVew.h; sourceTree = "<group>"; };
+		BC56E8EE1C4F7265003FB734 /* YLCostVew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostVew.m; sourceTree = "<group>"; };
+		BC56E8F01C4F76EA003FB734 /* COST_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = COST_bg.png; sourceTree = "<group>"; };
+		BC56E8F21C4F775E003FB734 /* cost_bg_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cost_bg_up.png; sourceTree = "<group>"; };
+		BC56E8F41C4F7CE4003FB734 /* YLGetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGetViewController.h; sourceTree = "<group>"; };
+		BC56E8F51C4F7CE4003FB734 /* YLGetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGetViewController.m; sourceTree = "<group>"; };
+		BC56E8F71C4FACF1003FB734 /* button_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bg.png; sourceTree = "<group>"; };
+		BC56E8FB1C4FB818003FB734 /* YLDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDetailView.h; sourceTree = "<group>"; };
+		BC56E8FC1C4FB818003FB734 /* YLDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDetailView.m; sourceTree = "<group>"; };
+		BC589FAE1C4C6B89008889C3 /* YLTimeDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTimeDeal.h; sourceTree = "<group>"; };
+		BC589FAF1C4C6B89008889C3 /* YLTimeDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTimeDeal.m; sourceTree = "<group>"; };
+		BC589FBA1C4CBA7A008889C3 /* yusuanup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yusuanup.png; sourceTree = "<group>"; };
+		BC589FC21C4CE324008889C3 /* YLBudgetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBudgetTableViewCell.h; sourceTree = "<group>"; };
+		BC589FC31C4CE324008889C3 /* YLBudgetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBudgetTableViewCell.m; sourceTree = "<group>"; };
+		BC589FC91C4CEBAA008889C3 /* YLBudgeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBudgeModel.h; sourceTree = "<group>"; };
+		BC589FCA1C4CEBAA008889C3 /* YLBudgeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBudgeModel.m; sourceTree = "<group>"; };
+		BC5E125C1C50709F0079AA42 /* YLDataDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDataDeal.h; sourceTree = "<group>"; };
+		BC5E125D1C50709F0079AA42 /* YLDataDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDataDeal.m; sourceTree = "<group>"; };
+		BC5E125F1C507D9E0079AA42 /* YLDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDetailTableViewCell.h; sourceTree = "<group>"; };
+		BC5E12601C507D9E0079AA42 /* YLDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDetailTableViewCell.m; sourceTree = "<group>"; };
+		BC5E12621C50B40F0079AA42 /* budget_bg_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = budget_bg_d.png; sourceTree = "<group>"; };
+		BC5E12641C50C2D80079AA42 /* YLColoers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLColoers.h; sourceTree = "<group>"; };
+		BC5E12651C50C2D80079AA42 /* YLColoers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLColoers.m; sourceTree = "<group>"; };
+		BC5E12681C50CDB40079AA42 /* YLPieReportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPieReportView.h; sourceTree = "<group>"; };
+		BC5E12691C50CDB40079AA42 /* YLPieReportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPieReportView.m; sourceTree = "<group>"; };
+		BC5E126B1C50D0E80079AA42 /* report__bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = report__bg.png; path = firstViewImage/report__bg.png; sourceTree = "<group>"; };
+		BC5E126E1C50D85C0079AA42 /* left_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_bg.png; sourceTree = "<group>"; };
+		BC5E12701C50D85F0079AA42 /* right_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_bg.png; sourceTree = "<group>"; };
+		BC5E132E1C51C4EB0079AA42 /* YLDatePieChartNeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDatePieChartNeed.h; sourceTree = "<group>"; };
+		BC5E132F1C51C4EB0079AA42 /* YLDatePieChartNeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDatePieChartNeed.m; sourceTree = "<group>"; };
+		BC5E13461C51FB8B0079AA42 /* YLPieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPieModel.h; sourceTree = "<group>"; };
+		BC5E13471C51FB8B0079AA42 /* YLPieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPieModel.m; sourceTree = "<group>"; };
+		BC5E13571C524A750079AA42 /* YLRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRightViewController.h; sourceTree = "<group>"; };
+		BC5E13581C524A750079AA42 /* YLRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRightViewController.m; sourceTree = "<group>"; };
+		BC5E13591C524A750079AA42 /* YLRightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLRightViewController.xib; sourceTree = "<group>"; };
+		BC5E135C1C524E400079AA42 /* scrollBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollBG.png; sourceTree = "<group>"; };
+		BC5E13601C52595E0079AA42 /* cost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cost.png; sourceTree = "<group>"; };
+		BC617A161C525E2700E3D50F /* set_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = set_bg.png; sourceTree = "<group>"; };
+		BC65E0C81C448AD600C44BC6 /* YLCostOneTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostOneTimeViewController.h; sourceTree = "<group>"; };
+		BC65E0C91C448AD600C44BC6 /* YLCostOneTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostOneTimeViewController.m; sourceTree = "<group>"; };
+		BC65E0CB1C448B1100C44BC6 /* YLGetOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGetOneViewController.h; sourceTree = "<group>"; };
+		BC65E0CC1C448B1100C44BC6 /* YLGetOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGetOneViewController.m; sourceTree = "<group>"; };
+		BC65E0CE1C4490FA00C44BC6 /* navigationbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar@2x.png"; sourceTree = "<group>"; };
+		BC65E0D01C44955800C44BC6 /* yusuan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yusuan.png; sourceTree = "<group>"; };
+		BC65E0D31C4499D500C44BC6 /* YLBudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBudgetViewController.h; sourceTree = "<group>"; };
+		BC65E0D41C4499D500C44BC6 /* YLBudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBudgetViewController.m; sourceTree = "<group>"; };
+		BC660B311C56328C00813A69 /* buttonbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonbar@2x.png"; sourceTree = "<group>"; };
+		BC660B331C5634A100813A69 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
+		BC660B351C56356100813A69 /* button_barbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_barbar.png; sourceTree = "<group>"; };
+		BC660B371C5637A000813A69 /* cellBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellBG.png; sourceTree = "<group>"; };
+		BC660B391C563D4A00813A69 /* button_budget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_budget.png; sourceTree = "<group>"; };
+		BC660B3B1C563E2D00813A69 /* YLHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHintView.h; sourceTree = "<group>"; };
+		BC660B3C1C563E2D00813A69 /* YLHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHintView.m; sourceTree = "<group>"; };
+		BC6686BD1C55CB80004E086D /* YLRESideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRESideViewController.h; sourceTree = "<group>"; };
+		BC6686BE1C55CB80004E086D /* YLRESideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRESideViewController.m; sourceTree = "<group>"; };
+		BC6686C21C560CC8004E086D /* button_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar.png; sourceTree = "<group>"; };
+		BC6686C41C560D16004E086D /* YLCostModelKindSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostModelKindSetViewController.h; sourceTree = "<group>"; };
+		BC6686C51C560D16004E086D /* YLCostModelKindSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostModelKindSetViewController.m; sourceTree = "<group>"; };
+		BC6686C71C5618FB004E086D /* YLSonOfCostModelSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSonOfCostModelSetViewController.h; sourceTree = "<group>"; };
+		BC6686C81C5618FB004E086D /* YLSonOfCostModelSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSonOfCostModelSetViewController.m; sourceTree = "<group>"; };
+		BC6686CC1C56280F004E086D /* most_pretty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = most_pretty.png; sourceTree = "<group>"; };
+		BC7911911C451FDD003996F2 /* YLNsuserD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNsuserD.h; sourceTree = "<group>"; };
+		BC7911921C451FDD003996F2 /* YLNsuserD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNsuserD.m; sourceTree = "<group>"; };
+		BC8B1B2D1C3D14AC00665523 /* bg5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg5.jpg; path = YLPrivateFinancialManagement/Resource/bg5.jpg; sourceTree = SOURCE_ROOT; };
+		BC8B1B341C3D14AC00665523 /* mingxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mingxi.png; sourceTree = "<group>"; };
+		BC8B1B351C3D14AC00665523 /* shouru@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shouru@2x.png"; sourceTree = "<group>"; };
+		BC8B1B381C3D14AC00665523 /* tubiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tubiao.png; sourceTree = "<group>"; };
+		BC8B1B3A1C3D14AC00665523 /* yuyin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yuyin.png; sourceTree = "<group>"; };
+		BC8B1B3B1C3D14AC00665523 /* zhicu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhicu@2x.png"; sourceTree = "<group>"; };
+		BC8B1B6A1C3D300900665523 /* fenlan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fenlan.png; sourceTree = "<group>"; };
+		BC8B1B6C1C3D311400665523 /* YLProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLProgressView.h; sourceTree = "<group>"; };
+		BC8B1B6D1C3D311400665523 /* YLProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLProgressView.m; sourceTree = "<group>"; };
+		BC8B1B721C3D3A5B00665523 /* navi_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navi_back.png; sourceTree = "<group>"; };
+		BC8B1B741C3D3BC200665523 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BC8B1B791C3D44D200665523 /* budget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = budget.png; sourceTree = "<group>"; };
+		BC8B1B7B1C3D44D500665523 /* white_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_back.png; sourceTree = "<group>"; };
+		BC92D8A41C43D91200ADB6A8 /* YLCostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostViewController.h; sourceTree = "<group>"; };
+		BC92D8A51C43D91200ADB6A8 /* YLCostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostViewController.m; sourceTree = "<group>"; };
+		BC92D8AA1C43D94B00ADB6A8 /* YLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDetailViewController.h; sourceTree = "<group>"; };
+		BC92D8AB1C43D94B00ADB6A8 /* YLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDetailViewController.m; sourceTree = "<group>"; };
+		BC92D8AD1C43D99A00ADB6A8 /* YLReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLReportViewController.h; sourceTree = "<group>"; };
+		BC92D8AE1C43D99A00ADB6A8 /* YLReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLReportViewController.m; sourceTree = "<group>"; };
+		BC92D8B01C43DA2200ADB6A8 /* YLMumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMumViewController.h; sourceTree = "<group>"; };
+		BC92D8B11C43DA2200ADB6A8 /* YLMumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMumViewController.m; sourceTree = "<group>"; };
+		BC92D8B61C43DB1E00ADB6A8 /* YLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMainViewController.h; sourceTree = "<group>"; };
+		BC92D8B71C43DB1E00ADB6A8 /* YLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMainViewController.m; sourceTree = "<group>"; };
+		BCEAAA4A1C3BD9F100CEB816 /* YLPrivateFinancialManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLPrivateFinancialManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEAAA4E1C3BD9F100CEB816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEAAA4F1C3BD9F100CEB816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCEAAA511C3BD9F100CEB816 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCEAAA521C3BD9F100CEB816 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCEAAA581C3BD9F100CEB816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCEAAA5A1C3BD9F100CEB816 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCEAAA5D1C3BD9F100CEB816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BCEAAA631C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLPrivateFinancialManagementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEAAA681C3BD9F100CEB816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEAAA691C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPrivateFinancialManagementTests.m; sourceTree = "<group>"; };
+		BCEAAAF71C3BEC8900CEB816 /* YLfirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLfirstView.h; sourceTree = "<group>"; };
+		BCEAAAF81C3BEC8900CEB816 /* YLfirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLfirstView.m; sourceTree = "<group>"; };
+		BCEAAAFA1C3BEE6F00CEB816 /* YLMyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMyButton.h; sourceTree = "<group>"; };
+		BCEAAAFB1C3BEE6F00CEB816 /* YLMyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMyButton.m; sourceTree = "<group>"; };
+		C9DC00B195042DF13123DC52 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCEAAA471C3BD9F100CEB816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0948784C7D9EA2E53A81BC2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEAAA601C3BD9F100CEB816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		264DBAEB936F8CF05CE910F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12DF8F2ECDC2D733CB17B993 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC20766E1C46674700111CD3 /* dataManager */ = {
+			isa = PBXGroup;
+			children = (
+				BC20766F1C46678D00111CD3 /* YLDataBaseManager.h */,
+				BC2076701C46678D00111CD3 /* YLDataBaseManager.m */,
+				BC5E125C1C50709F0079AA42 /* YLDataDeal.h */,
+				BC5E125D1C50709F0079AA42 /* YLDataDeal.m */,
+			);
+			name = dataManager;
+			sourceTree = "<group>";
+		};
+		BC2076E31C4681A500111CD3 /* 一半的背景图片 */ = {
+			isa = PBXGroup;
+			children = (
+				BC2076E41C4681B400111CD3 /* half_bg@2x.png */,
+			);
+			name = "一半的背景图片";
+			sourceTree = "<group>";
+		};
+		BC2076E61C4728B900111CD3 /* 支出一笔页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC2076E71C4728E700111CD3 /* YLCostButton.h */,
+				BC2076E81C4728E700111CD3 /* YLCostButton.m */,
+				BC2076EA1C47294F00111CD3 /* YLCostView.h */,
+				BC2076EB1C47294F00111CD3 /* YLCostView.m */,
+			);
+			name = "支出一笔页面";
+			sourceTree = "<group>";
+		};
+		BC2076ED1C474C4100111CD3 /* 支出页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC2076F01C477D5C00111CD3 /* doneBuBG.png */,
+				BC2076F21C478B7500111CD3 /* halfDownBG.png */,
+				BC2076EE1C474C6200111CD3 /* addButton@2x.png */,
+			);
+			name = "支出页面";
+			sourceTree = "<group>";
+		};
+		BC22F0AD1C534243007F715A /* 设置模式页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC22F0AE1C534273007F715A /* YLMyCollectionViewCell.h */,
+				BC22F0AF1C534273007F715A /* YLMyCollectionViewCell.m */,
+			);
+			name = "设置模式页面";
+			sourceTree = "<group>";
+		};
+		BC56E8E81C4F6FAE003FB734 /* 支出页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC56E8F71C4FACF1003FB734 /* button_bg.png */,
+				BC56E8F01C4F76EA003FB734 /* COST_bg.png */,
+			);
+			name = "支出页面";
+			sourceTree = "<group>";
+		};
+		BC56E8EB1C4F7172003FB734 /* 主页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BCEAAAF71C3BEC8900CEB816 /* YLfirstView.h */,
+				BCEAAAF81C3BEC8900CEB816 /* YLfirstView.m */,
+				BCEAAAFA1C3BEE6F00CEB816 /* YLMyButton.h */,
+				BCEAAAFB1C3BEE6F00CEB816 /* YLMyButton.m */,
+				BC8B1B6C1C3D311400665523 /* YLProgressView.h */,
+				BC8B1B6D1C3D311400665523 /* YLProgressView.m */,
+				BC487DF61C3E877E00C7C994 /* YLCenterView.h */,
+				BC487DF71C3E877E00C7C994 /* YLCenterView.m */,
+			);
+			name = "主页面";
+			sourceTree = "<group>";
+		};
+		BC56E8EC1C4F718D003FB734 /* 收入页面和支出页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC56E8ED1C4F7265003FB734 /* YLCostVew.h */,
+				BC56E8EE1C4F7265003FB734 /* YLCostVew.m */,
+			);
+			name = "收入页面和支出页面";
+			sourceTree = "<group>";
+		};
+		BC56E8F91C4FB6D7003FB734 /* 明细页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC660B391C563D4A00813A69 /* button_budget.png */,
+				BC56E8F21C4F775E003FB734 /* cost_bg_up.png */,
+				BC660B371C5637A000813A69 /* cellBG.png */,
+			);
+			name = "明细页面";
+			sourceTree = "<group>";
+		};
+		BC56E8FA1C4FB7E8003FB734 /* 明细页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC56E8FB1C4FB818003FB734 /* YLDetailView.h */,
+				BC56E8FC1C4FB818003FB734 /* YLDetailView.m */,
+				BC5E125F1C507D9E0079AA42 /* YLDetailTableViewCell.h */,
+				BC5E12601C507D9E0079AA42 /* YLDetailTableViewCell.m */,
+			);
+			name = "明细页面";
+			sourceTree = "<group>";
+		};
+		BC589FB91C4CBA6D008889C3 /* 预算页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC5E12621C50B40F0079AA42 /* budget_bg_d.png */,
+				BC589FBA1C4CBA7A008889C3 /* yusuanup.png */,
+			);
+			name = "预算页面";
+			sourceTree = "<group>";
+		};
+		BC589FBC1C4CDEB3008889C3 /* 预算页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC589FC21C4CE324008889C3 /* YLBudgetTableViewCell.h */,
+				BC589FC31C4CE324008889C3 /* YLBudgetTableViewCell.m */,
+			);
+			name = "预算页面";
+			sourceTree = "<group>";
+		};
+		BC5E12671C50CD760079AA42 /* 图形页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC20766B1C46667500111CD3 /* YLDrawPieChart.h */,
+				BC20766C1C46667500111CD3 /* YLDrawPieChart.m */,
+				BC5E12681C50CDB40079AA42 /* YLPieReportView.h */,
+				BC5E12691C50CDB40079AA42 /* YLPieReportView.m */,
+			);
+			name = "图形页面";
+			sourceTree = "<group>";
+		};
+		BC5E126D1C50D1A30079AA42 /* 报表页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC5E126B1C50D0E80079AA42 /* report__bg.png */,
+				BC5E12701C50D85F0079AA42 /* right_bg.png */,
+				BC5E126E1C50D85C0079AA42 /* left_bg.png */,
+			);
+			name = "报表页面";
+			sourceTree = "<group>";
+		};
+		BC5E13491C522A8F0079AA42 /* RESideMenuCotroller */ = {
+			isa = PBXGroup;
+			children = (
+				BC5E13571C524A750079AA42 /* YLRightViewController.h */,
+				BC5E13581C524A750079AA42 /* YLRightViewController.m */,
+				BC5E13591C524A750079AA42 /* YLRightViewController.xib */,
+				BC22F09B1C531B6E007F715A /* YLLetfViewController.h */,
+				BC22F09C1C531B6E007F715A /* YLLetfViewController.m */,
+				BC22F09D1C531B6E007F715A /* YLLetfViewController.xib */,
+				BC22F0A21C53286A007F715A /* YLAboutUsViewController.h */,
+				BC22F0A31C53286A007F715A /* YLAboutUsViewController.m */,
+				BC22F0A41C53286A007F715A /* YLAboutUsViewController.xib */,
+				BC6686BD1C55CB80004E086D /* YLRESideViewController.h */,
+				BC6686BE1C55CB80004E086D /* YLRESideViewController.m */,
+				BC6686C71C5618FB004E086D /* YLSonOfCostModelSetViewController.h */,
+				BC6686C81C5618FB004E086D /* YLSonOfCostModelSetViewController.m */,
+			);
+			name = RESideMenuCotroller;
+			sourceTree = "<group>";
+		};
+		BC5E13561C5233180079AA42 /* 设置模板页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC22F0A71C533001007F715A /* YLGetModelViewController.h */,
+				BC22F0A81C533001007F715A /* YLGetModelViewController.m */,
+				BC22F0AA1C533016007F715A /* YLCostModelSetViewController.h */,
+				BC22F0AB1C533016007F715A /* YLCostModelSetViewController.m */,
+				BC6686C41C560D16004E086D /* YLCostModelKindSetViewController.h */,
+				BC6686C51C560D16004E086D /* YLCostModelKindSetViewController.m */,
+			);
+			name = "设置模板页面";
+			sourceTree = "<group>";
+		};
+		BC65E0D21C4499A600C44BC6 /* 预算页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC65E0D31C4499D500C44BC6 /* YLBudgetViewController.h */,
+				BC65E0D41C4499D500C44BC6 /* YLBudgetViewController.m */,
+			);
+			name = "预算页面";
+			sourceTree = "<group>";
+		};
+		BC7911901C451F95003996F2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC660B3B1C563E2D00813A69 /* YLHintView.h */,
+				BC660B3C1C563E2D00813A69 /* YLHintView.m */,
+				BC7911911C451FDD003996F2 /* YLNsuserD.h */,
+				BC7911921C451FDD003996F2 /* YLNsuserD.m */,
+				BC589FAE1C4C6B89008889C3 /* YLTimeDeal.h */,
+				BC589FAF1C4C6B89008889C3 /* YLTimeDeal.m */,
+				BC5E12641C50C2D80079AA42 /* YLColoers.h */,
+				BC5E12651C50C2D80079AA42 /* YLColoers.m */,
+				BC5E132E1C51C4EB0079AA42 /* YLDatePieChartNeed.h */,
+				BC5E132F1C51C4EB0079AA42 /* YLDatePieChartNeed.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		BC8B1B281C3D14AC00665523 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BC5E126D1C50D1A30079AA42 /* 报表页面 */,
+				BC56E8F91C4FB6D7003FB734 /* 明细页面 */,
+				BC56E8E81C4F6FAE003FB734 /* 支出页面 */,
+				BC589FB91C4CBA6D008889C3 /* 预算页面 */,
+				BC2076ED1C474C4100111CD3 /* 支出页面 */,
+				BC2076E31C4681A500111CD3 /* 一半的背景图片 */,
+				BC8B1B751C3D446C00665523 /* bg */,
+				BC8B1B311C3D14AC00665523 /* firstViewImage */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BC8B1B311C3D14AC00665523 /* firstViewImage */ = {
+			isa = PBXGroup;
+			children = (
+				BC5E135C1C524E400079AA42 /* scrollBG.png */,
+				BC487DF91C3E947300C7C994 /* orange_color.png */,
+				BC660B351C56356100813A69 /* button_barbar.png */,
+				BC660B311C56328C00813A69 /* buttonbar@2x.png */,
+				BC660B331C5634A100813A69 /* bg2.png */,
+				BC65E0D01C44955800C44BC6 /* yusuan.png */,
+				BC5E13601C52595E0079AA42 /* cost.png */,
+				BC8B1B7B1C3D44D500665523 /* white_back.png */,
+				BC8B1B791C3D44D200665523 /* budget.png */,
+				BC487DF21C3E5F9800C7C994 /* bg1.jpg */,
+				BC8B1B721C3D3A5B00665523 /* navi_back.png */,
+				BC8B1B6A1C3D300900665523 /* fenlan.png */,
+				BC8B1B341C3D14AC00665523 /* mingxi.png */,
+				BC8B1B351C3D14AC00665523 /* shouru@2x.png */,
+				BC8B1B381C3D14AC00665523 /* tubiao.png */,
+				BC8B1B3A1C3D14AC00665523 /* yuyin.png */,
+				BC8B1B3B1C3D14AC00665523 /* zhicu@2x.png */,
+			);
+			path = firstViewImage;
+			sourceTree = "<group>";
+		};
+		BC8B1B6F1C3D32B100665523 /* applist */ = {
+			isa = PBXGroup;
+			children = (
+				BCEAAA511C3BD9F100CEB816 /* AppDelegate.h */,
+				BCEAAA521C3BD9F100CEB816 /* AppDelegate.m */,
+			);
+			name = applist;
+			sourceTree = "<group>";
+		};
+		BC8B1B751C3D446C00665523 /* bg */ = {
+			isa = PBXGroup;
+			children = (
+				BC6686CC1C56280F004E086D /* most_pretty.png */,
+				BC6686C21C560CC8004E086D /* button_bar.png */,
+				BC22F0B11C534444007F715A /* close@2x.png */,
+				BC22F0A01C532668007F715A /* Icon-60@2x.png */,
+				BC617A161C525E2700E3D50F /* set_bg.png */,
+				BC65E0CE1C4490FA00C44BC6 /* navigationbar@2x.png */,
+				BC8B1B2D1C3D14AC00665523 /* bg5.jpg */,
+			);
+			path = bg;
+			sourceTree = "<group>";
+		};
+		BC92D89A1C43D41200ADB6A8 /* 主页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC92D8B61C43DB1E00ADB6A8 /* YLMainViewController.h */,
+				BC92D8B71C43DB1E00ADB6A8 /* YLMainViewController.m */,
+			);
+			name = "主页面";
+			sourceTree = "<group>";
+		};
+		BC92D89B1C43D49F00ADB6A8 /* 支出一笔页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC65E0C81C448AD600C44BC6 /* YLCostOneTimeViewController.h */,
+				BC65E0C91C448AD600C44BC6 /* YLCostOneTimeViewController.m */,
+			);
+			name = "支出一笔页面";
+			sourceTree = "<group>";
+		};
+		BC92D89C1C43D4B100ADB6A8 /* 收入一笔页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC65E0CB1C448B1100C44BC6 /* YLGetOneViewController.h */,
+				BC65E0CC1C448B1100C44BC6 /* YLGetOneViewController.m */,
+			);
+			name = "收入一笔页面";
+			sourceTree = "<group>";
+		};
+		BC92D89D1C43D4BC00ADB6A8 /* 支出页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC92D8A41C43D91200ADB6A8 /* YLCostViewController.h */,
+				BC92D8A51C43D91200ADB6A8 /* YLCostViewController.m */,
+			);
+			name = "支出页面";
+			sourceTree = "<group>";
+		};
+		BC92D89E1C43D4C500ADB6A8 /* 收入页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC56E8F41C4F7CE4003FB734 /* YLGetViewController.h */,
+				BC56E8F51C4F7CE4003FB734 /* YLGetViewController.m */,
+			);
+			name = "收入页面";
+			sourceTree = "<group>";
+		};
+		BC92D89F1C43D4CC00ADB6A8 /* 明细页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC92D8AA1C43D94B00ADB6A8 /* YLDetailViewController.h */,
+				BC92D8AB1C43D94B00ADB6A8 /* YLDetailViewController.m */,
+			);
+			name = "明细页面";
+			sourceTree = "<group>";
+		};
+		BC92D8A11C43D4ED00ADB6A8 /* 报表页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC92D8AD1C43D99A00ADB6A8 /* YLReportViewController.h */,
+				BC92D8AE1C43D99A00ADB6A8 /* YLReportViewController.m */,
+			);
+			name = "报表页面";
+			sourceTree = "<group>";
+		};
+		BC92D8A21C43D53D00ADB6A8 /* 收入model */ = {
+			isa = PBXGroup;
+			children = (
+				BC2076E01C46799200111CD3 /* YLGetModel.h */,
+				BC2076E11C46799200111CD3 /* YLGetModel.m */,
+			);
+			name = "收入model";
+			sourceTree = "<group>";
+		};
+		BC92D8A31C43D54B00ADB6A8 /* 支出model */ = {
+			isa = PBXGroup;
+			children = (
+				BC2076DD1C46787200111CD3 /* YLCostModel.h */,
+				BC2076DE1C46787200111CD3 /* YLCostModel.m */,
+			);
+			name = "支出model";
+			sourceTree = "<group>";
+		};
+		BCEAAA411C3BD9F100CEB816 = {
+			isa = PBXGroup;
+			children = (
+				BCEAAA4C1C3BD9F100CEB816 /* YLPrivateFinancialManagement */,
+				BCEAAA661C3BD9F100CEB816 /* YLPrivateFinancialManagementTests */,
+				BCEAAA4B1C3BD9F100CEB816 /* Products */,
+				DB2B3CAFD906515DC18537B5 /* Pods */,
+				264DBAEB936F8CF05CE910F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCEAAA4B1C3BD9F100CEB816 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCEAAA4A1C3BD9F100CEB816 /* YLPrivateFinancialManagement.app */,
+				BCEAAA631C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCEAAA4C1C3BD9F100CEB816 /* YLPrivateFinancialManagement */ = {
+			isa = PBXGroup;
+			children = (
+				BC8B1B281C3D14AC00665523 /* Resource */,
+				BC20766E1C46674700111CD3 /* dataManager */,
+				BC7911901C451F95003996F2 /* Utils */,
+				BC8B1B6F1C3D32B100665523 /* applist */,
+				BCEAAA751C3BDAA000CEB816 /* views */,
+				BCEAAA741C3BDA9700CEB816 /* models */,
+				BCEAAA731C3BDA4500CEB816 /* Controllers */,
+				BCEAAA571C3BD9F100CEB816 /* Main.storyboard */,
+				BCEAAA5A1C3BD9F100CEB816 /* Images.xcassets */,
+				BCEAAA5C1C3BD9F100CEB816 /* LaunchScreen.xib */,
+				BCEAAA4D1C3BD9F100CEB816 /* Supporting Files */,
+			);
+			path = YLPrivateFinancialManagement;
+			sourceTree = "<group>";
+		};
+		BCEAAA4D1C3BD9F100CEB816 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCEAAA4E1C3BD9F100CEB816 /* Info.plist */,
+				BCEAAA4F1C3BD9F100CEB816 /* main.m */,
+				BC8B1B741C3D3BC200665523 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCEAAA661C3BD9F100CEB816 /* YLPrivateFinancialManagementTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCEAAA691C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.m */,
+				BCEAAA671C3BD9F100CEB816 /* Supporting Files */,
+			);
+			path = YLPrivateFinancialManagementTests;
+			sourceTree = "<group>";
+		};
+		BCEAAA671C3BD9F100CEB816 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCEAAA681C3BD9F100CEB816 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCEAAA731C3BDA4500CEB816 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC5E13561C5233180079AA42 /* 设置模板页面 */,
+				BC5E13491C522A8F0079AA42 /* RESideMenuCotroller */,
+				BC65E0D21C4499A600C44BC6 /* 预算页面 */,
+				BC92D8A11C43D4ED00ADB6A8 /* 报表页面 */,
+				BC92D89F1C43D4CC00ADB6A8 /* 明细页面 */,
+				BC92D89E1C43D4C500ADB6A8 /* 收入页面 */,
+				BC92D89D1C43D4BC00ADB6A8 /* 支出页面 */,
+				BC92D89C1C43D4B100ADB6A8 /* 收入一笔页面 */,
+				BC92D89B1C43D49F00ADB6A8 /* 支出一笔页面 */,
+				BC92D89A1C43D41200ADB6A8 /* 主页面 */,
+				BC92D8B01C43DA2200ADB6A8 /* YLMumViewController.h */,
+				BC92D8B11C43DA2200ADB6A8 /* YLMumViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BCEAAA741C3BDA9700CEB816 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BC92D8A31C43D54B00ADB6A8 /* 支出model */,
+				BC92D8A21C43D53D00ADB6A8 /* 收入model */,
+				BC589FC91C4CEBAA008889C3 /* YLBudgeModel.h */,
+				BC589FCA1C4CEBAA008889C3 /* YLBudgeModel.m */,
+				BC5E13461C51FB8B0079AA42 /* YLPieModel.h */,
+				BC5E13471C51FB8B0079AA42 /* YLPieModel.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		BCEAAA751C3BDAA000CEB816 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BC22F0AD1C534243007F715A /* 设置模式页面 */,
+				BC5E12671C50CD760079AA42 /* 图形页面 */,
+				BC56E8FA1C4FB7E8003FB734 /* 明细页面 */,
+				BC56E8EC1C4F718D003FB734 /* 收入页面和支出页面 */,
+				BC56E8EB1C4F7172003FB734 /* 主页面 */,
+				BC589FBC1C4CDEB3008889C3 /* 预算页面 */,
+				BC2076E61C4728B900111CD3 /* 支出一笔页面 */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		DB2B3CAFD906515DC18537B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B329C2A3488D76A122E03942 /* Pods.debug.xcconfig */,
+				C9DC00B195042DF13123DC52 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCEAAA491C3BD9F100CEB816 /* YLPrivateFinancialManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEAAA6D1C3BD9F100CEB816 /* Build configuration list for PBXNativeTarget "YLPrivateFinancialManagement" */;
+			buildPhases = (
+				48393F3341678CF3DD7673F8 /* Check Pods Manifest.lock */,
+				BCEAAA461C3BD9F100CEB816 /* Sources */,
+				BCEAAA471C3BD9F100CEB816 /* Frameworks */,
+				BCEAAA481C3BD9F100CEB816 /* Resources */,
+				CF89ADD162A16DA427D385EF /* Embed Pods Frameworks */,
+				2E772BED53B22DE99847A49D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLPrivateFinancialManagement;
+			productName = YLPrivateFinancialManagement;
+			productReference = BCEAAA4A1C3BD9F100CEB816 /* YLPrivateFinancialManagement.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCEAAA621C3BD9F100CEB816 /* YLPrivateFinancialManagementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEAAA701C3BD9F100CEB816 /* Build configuration list for PBXNativeTarget "YLPrivateFinancialManagementTests" */;
+			buildPhases = (
+				BCEAAA5F1C3BD9F100CEB816 /* Sources */,
+				BCEAAA601C3BD9F100CEB816 /* Frameworks */,
+				BCEAAA611C3BD9F100CEB816 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCEAAA651C3BD9F100CEB816 /* PBXTargetDependency */,
+			);
+			name = YLPrivateFinancialManagementTests;
+			productName = YLPrivateFinancialManagementTests;
+			productReference = BCEAAA631C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCEAAA421C3BD9F100CEB816 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YL;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = mobiletrain;
+				TargetAttributes = {
+					BCEAAA491C3BD9F100CEB816 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BCEAAA621C3BD9F100CEB816 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BCEAAA491C3BD9F100CEB816;
+					};
+				};
+			};
+			buildConfigurationList = BCEAAA451C3BD9F100CEB816 /* Build configuration list for PBXProject "YLPrivateFinancialManagement" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCEAAA411C3BD9F100CEB816;
+			productRefGroup = BCEAAA4B1C3BD9F100CEB816 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCEAAA491C3BD9F100CEB816 /* YLPrivateFinancialManagement */,
+				BCEAAA621C3BD9F100CEB816 /* YLPrivateFinancialManagementTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCEAAA481C3BD9F100CEB816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2076F11C477D5C00111CD3 /* doneBuBG.png in Resources */,
+				BC56E8F81C4FACF1003FB734 /* button_bg.png in Resources */,
+				BC660B3A1C563D4A00813A69 /* button_budget.png in Resources */,
+				BC8B1B581C3D14AC00665523 /* yuyin.png in Resources */,
+				BC660B341C5634A100813A69 /* bg2.png in Resources */,
+				BC5E126F1C50D85C0079AA42 /* left_bg.png in Resources */,
+				BC487DFA1C3E947300C7C994 /* orange_color.png in Resources */,
+				BC8B1B531C3D14AC00665523 /* shouru@2x.png in Resources */,
+				BC5E13611C52595E0079AA42 /* cost.png in Resources */,
+				BC660B361C56356100813A69 /* button_barbar.png in Resources */,
+				BC5E135D1C524E400079AA42 /* scrollBG.png in Resources */,
+				BC2076E51C4681B400111CD3 /* half_bg@2x.png in Resources */,
+				BC660B321C56328C00813A69 /* buttonbar@2x.png in Resources */,
+				BC2076EF1C474C6200111CD3 /* addButton@2x.png in Resources */,
+				BC5E12711C50D85F0079AA42 /* right_bg.png in Resources */,
+				BC8B1B4C1C3D14AC00665523 /* bg5.jpg in Resources */,
+				BC660B381C5637A000813A69 /* cellBG.png in Resources */,
+				BCEAAA591C3BD9F100CEB816 /* Main.storyboard in Resources */,
+				BC5E12631C50B40F0079AA42 /* budget_bg_d.png in Resources */,
+				BC22F0B21C534444007F715A /* close@2x.png in Resources */,
+				BC65E0CF1C4490FA00C44BC6 /* navigationbar@2x.png in Resources */,
+				BC5E126C1C50D0E80079AA42 /* report__bg.png in Resources */,
+				BC22F0A11C532668007F715A /* Icon-60@2x.png in Resources */,
+				BC8B1B731C3D3A5B00665523 /* navi_back.png in Resources */,
+				BC65E0D11C44955800C44BC6 /* yusuan.png in Resources */,
+				BC8B1B7A1C3D44D200665523 /* budget.png in Resources */,
+				BC56E8F31C4F775E003FB734 /* cost_bg_up.png in Resources */,
+				BC22F0A61C53286A007F715A /* YLAboutUsViewController.xib in Resources */,
+				BC6686C31C560CC8004E086D /* button_bar.png in Resources */,
+				BC487DF31C3E5F9800C7C994 /* bg1.jpg in Resources */,
+				BC2076F31C478B7500111CD3 /* halfDownBG.png in Resources */,
+				BC5E135B1C524A750079AA42 /* YLRightViewController.xib in Resources */,
+				BC589FBB1C4CBA7A008889C3 /* yusuanup.png in Resources */,
+				BC8B1B521C3D14AC00665523 /* mingxi.png in Resources */,
+				BCEAAA5E1C3BD9F100CEB816 /* LaunchScreen.xib in Resources */,
+				BC617A171C525E2700E3D50F /* set_bg.png in Resources */,
+				BC8B1B561C3D14AC00665523 /* tubiao.png in Resources */,
+				BC56E8F11C4F76EA003FB734 /* COST_bg.png in Resources */,
+				BCEAAA5B1C3BD9F100CEB816 /* Images.xcassets in Resources */,
+				BC22F09F1C531B6E007F715A /* YLLetfViewController.xib in Resources */,
+				BC6686CD1C56280F004E086D /* most_pretty.png in Resources */,
+				BC8B1B6B1C3D300900665523 /* fenlan.png in Resources */,
+				BC8B1B7C1C3D44D500665523 /* white_back.png in Resources */,
+				BC8B1B591C3D14AC00665523 /* zhicu@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEAAA611C3BD9F100CEB816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E772BED53B22DE99847A49D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48393F3341678CF3DD7673F8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF89ADD162A16DA427D385EF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCEAAA461C3BD9F100CEB816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC22F0A91C533001007F715A /* YLGetModelViewController.m in Sources */,
+				BC92D8A61C43D91200ADB6A8 /* YLCostViewController.m in Sources */,
+				BC8B1B6E1C3D311400665523 /* YLProgressView.m in Sources */,
+				BC589FCB1C4CEBAA008889C3 /* YLBudgeModel.m in Sources */,
+				BC2076EC1C47294F00111CD3 /* YLCostView.m in Sources */,
+				BC6686C61C560D16004E086D /* YLCostModelKindSetViewController.m in Sources */,
+				BC92D8B21C43DA2200ADB6A8 /* YLMumViewController.m in Sources */,
+				BCEAAAF91C3BEC8900CEB816 /* YLfirstView.m in Sources */,
+				BC5E12611C507D9E0079AA42 /* YLDetailTableViewCell.m in Sources */,
+				BC20766D1C46667500111CD3 /* YLDrawPieChart.m in Sources */,
+				BC92D8AF1C43D99A00ADB6A8 /* YLReportViewController.m in Sources */,
+				BC5E125E1C50709F0079AA42 /* YLDataDeal.m in Sources */,
+				BC6686BF1C55CB80004E086D /* YLRESideViewController.m in Sources */,
+				BC22F0AC1C533016007F715A /* YLCostModelSetViewController.m in Sources */,
+				BC56E8EF1C4F7265003FB734 /* YLCostVew.m in Sources */,
+				BCEAAAFC1C3BEE6F00CEB816 /* YLMyButton.m in Sources */,
+				BC65E0D51C4499D500C44BC6 /* YLBudgetViewController.m in Sources */,
+				BC65E0CD1C448B1100C44BC6 /* YLGetOneViewController.m in Sources */,
+				BC2076E91C4728E700111CD3 /* YLCostButton.m in Sources */,
+				BC22F0B01C534273007F715A /* YLMyCollectionViewCell.m in Sources */,
+				BCEAAA531C3BD9F100CEB816 /* AppDelegate.m in Sources */,
+				BC5E12661C50C2D80079AA42 /* YLColoers.m in Sources */,
+				BC487DF81C3E877E00C7C994 /* YLCenterView.m in Sources */,
+				BC92D8AC1C43D94B00ADB6A8 /* YLDetailViewController.m in Sources */,
+				BC2076E21C46799200111CD3 /* YLGetModel.m in Sources */,
+				BC2076711C46678D00111CD3 /* YLDataBaseManager.m in Sources */,
+				BC92D8B81C43DB1E00ADB6A8 /* YLMainViewController.m in Sources */,
+				BC7911931C451FDD003996F2 /* YLNsuserD.m in Sources */,
+				BC5E13481C51FB8B0079AA42 /* YLPieModel.m in Sources */,
+				BC5E135A1C524A750079AA42 /* YLRightViewController.m in Sources */,
+				BC56E8FD1C4FB818003FB734 /* YLDetailView.m in Sources */,
+				BC65E0CA1C448AD600C44BC6 /* YLCostOneTimeViewController.m in Sources */,
+				BC22F0A51C53286A007F715A /* YLAboutUsViewController.m in Sources */,
+				BC589FB01C4C6B89008889C3 /* YLTimeDeal.m in Sources */,
+				BC56E8F61C4F7CE4003FB734 /* YLGetViewController.m in Sources */,
+				BC589FC41C4CE324008889C3 /* YLBudgetTableViewCell.m in Sources */,
+				BC22F09E1C531B6E007F715A /* YLLetfViewController.m in Sources */,
+				BC6686C91C5618FB004E086D /* YLSonOfCostModelSetViewController.m in Sources */,
+				BCEAAA501C3BD9F100CEB816 /* main.m in Sources */,
+				BC2076DF1C46787200111CD3 /* YLCostModel.m in Sources */,
+				BC5E13301C51C4EB0079AA42 /* YLDatePieChartNeed.m in Sources */,
+				BC5E126A1C50CDB40079AA42 /* YLPieReportView.m in Sources */,
+				BC660B3D1C563E2D00813A69 /* YLHintView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEAAA5F1C3BD9F100CEB816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEAAA6A1C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCEAAA651C3BD9F100CEB816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCEAAA491C3BD9F100CEB816 /* YLPrivateFinancialManagement */;
+			targetProxy = BCEAAA641C3BD9F100CEB816 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCEAAA571C3BD9F100CEB816 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCEAAA581C3BD9F100CEB816 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCEAAA5C1C3BD9F100CEB816 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCEAAA5D1C3BD9F100CEB816 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCEAAA6B1C3BD9F100CEB816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCEAAA6C1C3BD9F100CEB816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCEAAA6E1C3BD9F100CEB816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B329C2A3488D76A122E03942 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLPrivateFinancialManagement/PrefixHeader.pch";
+				INFOPLIST_FILE = YLPrivateFinancialManagement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCEAAA6F1C3BD9F100CEB816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DC00B195042DF13123DC52 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLPrivateFinancialManagement/PrefixHeader.pch";
+				INFOPLIST_FILE = YLPrivateFinancialManagement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCEAAA711C3BD9F100CEB816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YLPrivateFinancialManagementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLPrivateFinancialManagement.app/YLPrivateFinancialManagement";
+			};
+			name = Debug;
+		};
+		BCEAAA721C3BD9F100CEB816 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YLPrivateFinancialManagementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLPrivateFinancialManagement.app/YLPrivateFinancialManagement";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCEAAA451C3BD9F100CEB816 /* Build configuration list for PBXProject "YLPrivateFinancialManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEAAA6B1C3BD9F100CEB816 /* Debug */,
+				BCEAAA6C1C3BD9F100CEB816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEAAA6D1C3BD9F100CEB816 /* Build configuration list for PBXNativeTarget "YLPrivateFinancialManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEAAA6E1C3BD9F100CEB816 /* Debug */,
+				BCEAAA6F1C3BD9F100CEB816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEAAA701C3BD9F100CEB816 /* Build configuration list for PBXNativeTarget "YLPrivateFinancialManagementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEAAA711C3BD9F100CEB816 /* Debug */,
+				BCEAAA721C3BD9F100CEB816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCEAAA421C3BD9F100CEB816 /* Project object */;
+}
