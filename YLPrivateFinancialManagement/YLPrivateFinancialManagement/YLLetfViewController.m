@@ -11,6 +11,7 @@
 #import "YLCostModelSetViewController.h"
 #import "YLRESideViewController.h"
 #import "YLSonOfCostModelSetViewController.h"
+#import "YLDataManagerViewController.h"
 @interface YLLetfViewController ()
 
 @end
@@ -31,6 +32,11 @@
     
     
     
+}
+- (IBAction)dataManagerButtonClieked:(UIButton *)sender {
+    YLDataManagerViewController *costModelSetVC=[[YLDataManagerViewController alloc ]init];
+    UINavigationController * navi=[[UINavigationController alloc]initWithRootViewController:costModelSetVC];
+    [self presentViewController:navi animated:YES completion:nil];
 }
 
 - (void)viewDidLoad {

@@ -88,6 +88,8 @@
 		BC92D8AF1C43D99A00ADB6A8 /* YLReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC92D8AE1C43D99A00ADB6A8 /* YLReportViewController.m */; };
 		BC92D8B21C43DA2200ADB6A8 /* YLMumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC92D8B11C43DA2200ADB6A8 /* YLMumViewController.m */; };
 		BC92D8B81C43DB1E00ADB6A8 /* YLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC92D8B71C43DB1E00ADB6A8 /* YLMainViewController.m */; };
+		BC9849A71C56FD4C00B0F66E /* YLDataManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9849A61C56FD4C00B0F66E /* YLDataManagerViewController.m */; };
+		BC9849AB1C57039B00B0F66E /* YLDataManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9849AA1C57039B00B0F66E /* YLDataManagerTableViewCell.m */; };
 		BCEAAA501C3BD9F100CEB816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAA4F1C3BD9F100CEB816 /* main.m */; };
 		BCEAAA531C3BD9F100CEB816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAA521C3BD9F100CEB816 /* AppDelegate.m */; };
 		BCEAAA591C3BD9F100CEB816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEAAA571C3BD9F100CEB816 /* Main.storyboard */; };
@@ -231,6 +233,10 @@
 		BC92D8B11C43DA2200ADB6A8 /* YLMumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMumViewController.m; sourceTree = "<group>"; };
 		BC92D8B61C43DB1E00ADB6A8 /* YLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMainViewController.h; sourceTree = "<group>"; };
 		BC92D8B71C43DB1E00ADB6A8 /* YLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMainViewController.m; sourceTree = "<group>"; };
+		BC9849A51C56FD4C00B0F66E /* YLDataManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDataManagerViewController.h; sourceTree = "<group>"; };
+		BC9849A61C56FD4C00B0F66E /* YLDataManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDataManagerViewController.m; sourceTree = "<group>"; };
+		BC9849A91C57039B00B0F66E /* YLDataManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDataManagerTableViewCell.h; sourceTree = "<group>"; };
+		BC9849AA1C57039B00B0F66E /* YLDataManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDataManagerTableViewCell.m; sourceTree = "<group>"; };
 		BCEAAA4A1C3BD9F100CEB816 /* YLPrivateFinancialManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLPrivateFinancialManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEAAA4E1C3BD9F100CEB816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCEAAA4F1C3BD9F100CEB816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -620,6 +626,24 @@
 			name = "支出model";
 			sourceTree = "<group>";
 		};
+		BC9849A41C56FB1F00B0F66E /* 数据管理页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC9849A51C56FD4C00B0F66E /* YLDataManagerViewController.h */,
+				BC9849A61C56FD4C00B0F66E /* YLDataManagerViewController.m */,
+			);
+			name = "数据管理页面";
+			sourceTree = "<group>";
+		};
+		BC9849A81C57033300B0F66E /* 数据管理 */ = {
+			isa = PBXGroup;
+			children = (
+				BC9849A91C57039B00B0F66E /* YLDataManagerTableViewCell.h */,
+				BC9849AA1C57039B00B0F66E /* YLDataManagerTableViewCell.m */,
+			);
+			name = "数据管理";
+			sourceTree = "<group>";
+		};
 		BCEAAA411C3BD9F100CEB816 = {
 			isa = PBXGroup;
 			children = (
@@ -688,6 +712,7 @@
 		BCEAAA731C3BDA4500CEB816 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC9849A41C56FB1F00B0F66E /* 数据管理页面 */,
 				BC5E13561C5233180079AA42 /* 设置模板页面 */,
 				BC5E13491C522A8F0079AA42 /* RESideMenuCotroller */,
 				BC65E0D21C4499A600C44BC6 /* 预算页面 */,
@@ -720,6 +745,7 @@
 		BCEAAA751C3BDAA000CEB816 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				BC9849A81C57033300B0F66E /* 数据管理 */,
 				BC22F0AD1C534243007F715A /* 设置模式页面 */,
 				BC5E12671C50CD760079AA42 /* 图形页面 */,
 				BC56E8FA1C4FB7E8003FB734 /* 明细页面 */,
@@ -944,6 +970,7 @@
 				BC5E12611C507D9E0079AA42 /* YLDetailTableViewCell.m in Sources */,
 				BC20766D1C46667500111CD3 /* YLDrawPieChart.m in Sources */,
 				BC92D8AF1C43D99A00ADB6A8 /* YLReportViewController.m in Sources */,
+				BC9849AB1C57039B00B0F66E /* YLDataManagerTableViewCell.m in Sources */,
 				BC5E125E1C50709F0079AA42 /* YLDataDeal.m in Sources */,
 				BC6686BF1C55CB80004E086D /* YLRESideViewController.m in Sources */,
 				BC22F0AC1C533016007F715A /* YLCostModelSetViewController.m in Sources */,
@@ -962,6 +989,7 @@
 				BC92D8B81C43DB1E00ADB6A8 /* YLMainViewController.m in Sources */,
 				BC7911931C451FDD003996F2 /* YLNsuserD.m in Sources */,
 				BC5E13481C51FB8B0079AA42 /* YLPieModel.m in Sources */,
+				BC9849A71C56FD4C00B0F66E /* YLDataManagerViewController.m in Sources */,
 				BC5E135A1C524A750079AA42 /* YLRightViewController.m in Sources */,
 				BC56E8FD1C4FB818003FB734 /* YLDetailView.m in Sources */,
 				BC65E0CA1C448AD600C44BC6 /* YLCostOneTimeViewController.m in Sources */,

@@ -172,7 +172,13 @@
     YLCostButton *changeButton=(id)[view viewWithTag:510];
     YLCostButton *constButton=(id)[view viewWithTag:500];
     YLCostButton *timeButton=(id)[view viewWithTag:511];
+  NSString *centerString=[constButton.titleLabel.text componentsSeparatedByString:@"."][0];
+    if (constButton.titleLabel.text.length==centerString.length+1) {
+        constButton.titleLabel.text=[[constButton.titleLabel.text componentsSeparatedByString:@"."]firstObject];
+        [constButton setTitle:[[constButton.titleLabel.text componentsSeparatedByString:@"."]firstObject] forState:UIControlStateNormal];
+    }
     model.dateNow=timeButton.titleLabel.text;
+    NSLog(@"%@",constButton.titleLabel.text);
     model.getMoney=constButton.titleLabel.text;
     model.kind=changeButton.titleLabel.text;
     if ([model.getMoney isEqualToString:@"0.0"]||[model.getMoney isEqualToString:@"0"]) {
@@ -277,6 +283,9 @@
     if ([button.titleLabel.text isEqualToString:@""]) {
         button.titleLabel.text=@"0.0";
         [button setTitle:@"0.0" forState:UIControlStateNormal];
+    }
+    if ([button.titleLabel.text componentsSeparatedByString:@"."].count==1) {
+        button.titleLabel.text=[[button.titleLabel.text componentsSeparatedByString:@"."]firstObject];
     }
     model.getMoney=button.titleLabel.text;
     [numberView removeFromSuperview];
@@ -440,7 +449,7 @@
     UIDatePicker *datePicker=[[UIDatePicker alloc]init];
     [numberView addSubview:datePicker];
     datePicker.date=[NSDate date];
-    NSTimeInterval halfYearInterval = 365 * 24 * 60 * 30;
+    NSTimeInterval halfYearInterval = 365 * 24 * 60 * 60;
     NSDate *today = [NSDate date];
     NSDate *halfYearFromToday = [today dateByAddingTimeInterval:halfYearInterval];
     [datePicker setDatePickerMode:UIDatePickerModeDate];
@@ -537,6 +546,9 @@
     if ([button.titleLabel.text isEqualToString:@""]) {
         button.titleLabel.text=@"0.0";
         [button setTitle:@"0.0" forState:UIControlStateNormal];
+    }
+    if ([button.titleLabel.text componentsSeparatedByString:@"."].count==1) {
+        button.titleLabel.text=[[button.titleLabel.text componentsSeparatedByString:@"."]firstObject];
     }
     model.getMoney=button.titleLabel.text;
     [numberView removeFromSuperview];

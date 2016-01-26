@@ -162,7 +162,7 @@ typedef NS_ENUM(NSInteger, CHOOSEKEYBOARD){
         UITextField *textField = [ac.textFields firstObject];
         if ([textField.text isEqualToString:@""]) {
             textField.text=@"0.0";
-        }
+        }else{
          modelNew.budget=[NSString stringWithFormat:@"%.1lf",[textField.text doubleValue]];
         CGFloat centerNumber=[modelNew.budget doubleValue]-[self costThisMonthTotal:modelNew.name];
         modelNew.surplus=[NSString stringWithFormat:@"%.1lf",centerNumber>0?centerNumber:0];
@@ -176,6 +176,7 @@ typedef NS_ENUM(NSInteger, CHOOSEKEYBOARD){
         dispatch_async(dispatch_get_main_queue(), ^{
             [myTableView reloadData];
         });
+        }
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     [ac addAction:okAction];
@@ -187,11 +188,14 @@ typedef NS_ENUM(NSInteger, CHOOSEKEYBOARD){
 -(void)creatTableView{
     myTableView=[[UITableView alloc]init];
     UIImageView *backView=[[UIImageView alloc]init];
-    backView.image=[UIImage imageNamed:@"report__bg"];
+   
     [myTableView setBackgroundView:backView];
     [downImageView addSubview:myTableView];
     [myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(downImageView).insets(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
+    [myTableView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(downImageView.mas_bottom).offset(-60);
     }];
     myTableView.tableFooterView=[[UIView alloc]init];
     myTableView.delegate=self;
@@ -454,7 +458,7 @@ typedef NS_ENUM(NSInteger, CHOOSEKEYBOARD){
             make.width.equalTo(@(width));
         }];
         downImageView=[[UIImageView alloc]init];
-        
+        downImageView.image=[UIImage imageNamed:@"report__bg"];
         downImageView.userInteractionEnabled=YES;
         [self.view addSubview:downImageView];
         [downImageView mas_makeConstraints:^(MASConstraintMaker *make) {
