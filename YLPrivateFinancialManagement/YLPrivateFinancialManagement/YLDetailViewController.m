@@ -68,13 +68,13 @@
     if (_chooseClass==DEFAULTDETAIL||_chooseClass==COSTDETAIL) {
         //按日花费
         if (_chooseShowKind==DETAULTKIND||_chooseShowKind==DAYKINDDETAIL) {
-            tableViewArray=[[YLDataDeal costTotalByDay] mutableCopy];
+            tableViewArray=[NSMutableArray arrayWithArray:[YLDataDeal costTotalByDay]];
             //按月花费
         }else if (_chooseShowKind==MONTHKINDDATAIL){
-            tableViewArray=[[YLDataDeal costTotalByMonth]mutableCopy];
+            tableViewArray=[NSMutableArray arrayWithArray:[YLDataDeal costTotalByMonth]];
             //种类花费
         }else if (_chooseShowKind==KAINSDATAIL){
-            tableViewArray=[[YLDataDeal costTotalByKinds] mutableCopy];
+            tableViewArray=[NSMutableArray arrayWithArray:[YLDataDeal costTotalByKinds]];
         }
         //
     }else if(_chooseClass==GETDETAL){

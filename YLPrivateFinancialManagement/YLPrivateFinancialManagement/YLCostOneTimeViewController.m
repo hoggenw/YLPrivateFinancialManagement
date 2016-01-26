@@ -66,6 +66,7 @@ typedef NS_ENUM(NSInteger, SHOWMODEL){
     YLCostView *costView=[[YLCostView alloc]init];
     //创建数字输入框
     YLCostButton *button=[costView creatButton];
+    button.layer.borderWidth=1;
     [button setTitle:@"0.0" forState:UIControlStateNormal];
     button.titleLabel.textAlignment=NSTextAlignmentRight;
     [button addTarget:self action:@selector(onCostButtonContent:) forControlEvents:UIControlEventTouchUpInside];
@@ -236,6 +237,8 @@ typedef NS_ENUM(NSInteger, SHOWMODEL){
 //记账完成的按钮点击回调方法
 -(void)doneButtonClicked:(UIButton *)sender{
     [self selfTextViewResignFirstResponder];
+    [numberView removeFromSuperview];
+    numberView=nil;
     YLCostButton *mainButton=(id)[view viewWithTag:220];
     YLCostButton *changeButton=(id)[view viewWithTag:221];
     YLCostButton *constButton=(id)[view viewWithTag:209];

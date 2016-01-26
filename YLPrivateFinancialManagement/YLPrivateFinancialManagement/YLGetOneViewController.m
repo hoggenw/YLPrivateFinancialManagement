@@ -56,6 +56,7 @@
     YLCostView *costView=[[YLCostView alloc]init];
     //创建数字输入框
     YLCostButton *button=[costView creatButton];
+    button.layer.borderWidth=1;
     [button setTitle:@"0.0" forState:UIControlStateNormal];
     button.titleLabel.textAlignment=NSTextAlignmentRight;
     [button addTarget:self action:@selector(onCostButtonContent:) forControlEvents:UIControlEventTouchUpInside];
@@ -169,6 +170,8 @@
 //记账完成的按钮点击回调方法
 -(void)doneButtonClickedFish:(UIButton *)sender{
     [self selfTextViewResignFirstResponder];
+    [numberView removeFromSuperview];
+    numberView=nil;
     YLCostButton *changeButton=(id)[view viewWithTag:510];
     YLCostButton *constButton=(id)[view viewWithTag:500];
     YLCostButton *timeButton=(id)[view viewWithTag:511];
@@ -178,7 +181,6 @@
         [constButton setTitle:[[constButton.titleLabel.text componentsSeparatedByString:@"."]firstObject] forState:UIControlStateNormal];
     }
     model.dateNow=timeButton.titleLabel.text;
-    NSLog(@"%@",constButton.titleLabel.text);
     model.getMoney=constButton.titleLabel.text;
     model.kind=changeButton.titleLabel.text;
     if ([model.getMoney isEqualToString:@"0.0"]||[model.getMoney isEqualToString:@"0"]) {

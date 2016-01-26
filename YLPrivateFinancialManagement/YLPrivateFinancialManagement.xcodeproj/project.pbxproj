@@ -121,7 +121,7 @@
 		BC2076DE1C46787200111CD3 /* YLCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostModel.m; sourceTree = "<group>"; };
 		BC2076E01C46799200111CD3 /* YLGetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGetModel.h; sourceTree = "<group>"; };
 		BC2076E11C46799200111CD3 /* YLGetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGetModel.m; sourceTree = "<group>"; };
-		BC2076E41C4681B400111CD3 /* half_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "half_bg@2x.png"; sourceTree = "<group>"; };
+		BC2076E41C4681B400111CD3 /* half_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "half_bg@2x.png"; path = "../half_bg@2x.png"; sourceTree = "<group>"; };
 		BC2076E71C4728E700111CD3 /* YLCostButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostButton.h; sourceTree = "<group>"; };
 		BC2076E81C4728E700111CD3 /* YLCostButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostButton.m; sourceTree = "<group>"; };
 		BC2076EA1C47294F00111CD3 /* YLCostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostView.h; sourceTree = "<group>"; };
@@ -291,14 +291,6 @@
 				BC5E125D1C50709F0079AA42 /* YLDataDeal.m */,
 			);
 			name = dataManager;
-			sourceTree = "<group>";
-		};
-		BC2076E31C4681A500111CD3 /* 一半的背景图片 */ = {
-			isa = PBXGroup;
-			children = (
-				BC2076E41C4681B400111CD3 /* half_bg@2x.png */,
-			);
-			name = "一半的背景图片";
 			sourceTree = "<group>";
 		};
 		BC2076E61C4728B900111CD3 /* 支出一笔页面 */ = {
@@ -491,7 +483,6 @@
 				BC56E8E81C4F6FAE003FB734 /* 支出页面 */,
 				BC589FB91C4CBA6D008889C3 /* 预算页面 */,
 				BC2076ED1C474C4100111CD3 /* 支出页面 */,
-				BC2076E31C4681A500111CD3 /* 一半的背景图片 */,
 				BC8B1B751C3D446C00665523 /* bg */,
 				BC8B1B311C3D14AC00665523 /* firstViewImage */,
 			);
@@ -534,6 +525,7 @@
 		BC8B1B751C3D446C00665523 /* bg */ = {
 			isa = PBXGroup;
 			children = (
+				BC2076E41C4681B400111CD3 /* half_bg@2x.png */,
 				BC6686CC1C56280F004E086D /* most_pretty.png */,
 				BC6686C21C560CC8004E086D /* button_bar.png */,
 				BC22F0B11C534444007F715A /* close@2x.png */,
@@ -814,11 +806,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = YL;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = mobiletrain;
 				TargetAttributes = {
 					BCEAAA491C3BD9F100CEB816 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = G77KT64382;
 					};
 					BCEAAA621C3BD9F100CEB816 = {
 						CreatedOnToolsVersion = 6.4;
@@ -1066,6 +1059,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1130,10 +1124,13 @@
 			baseConfigurationReference = B329C2A3488D76A122E03942 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YLPrivateFinancialManagement/PrefixHeader.pch";
 				INFOPLIST_FILE = YLPrivateFinancialManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1142,10 +1139,13 @@
 			baseConfigurationReference = C9DC00B195042DF13123DC52 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YLPrivateFinancialManagement/PrefixHeader.pch";
 				INFOPLIST_FILE = YLPrivateFinancialManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

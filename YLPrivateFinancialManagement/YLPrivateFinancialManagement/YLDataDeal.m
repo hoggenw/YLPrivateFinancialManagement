@@ -53,6 +53,13 @@
             getModel=dataFromSQLArray[index];
             if ([[YLTimeDeal dealString:getModel.dateNow]isEqualToString:name]) {
                 dayCost+=[getModel.getMoney doubleValue];
+                if (dataFromSQLArray.count==index+1) {
+                    YLBudgeModel *model=[[YLBudgeModel alloc]init];
+                    model.name=name;
+                    model.budget=[NSString stringWithFormat:@"%.1lf",dayCost];
+                    model.surplus=@"收入";
+                    [needArray addObject:model];
+                }
             }else{
                 YLBudgeModel *model=[[YLBudgeModel alloc]init];
                 model.name=name;
@@ -63,6 +70,13 @@
                 name=[YLTimeDeal dealString:getModel.dateNow];
                 dayCost=0;
                 dayCost+=[getModel.getMoney doubleValue];
+                if (dataFromSQLArray.count==index+1) {
+                    YLBudgeModel *model=[[YLBudgeModel alloc]init];
+                    model.name=name;
+                    model.budget=[NSString stringWithFormat:@"%.1lf",dayCost];
+                    model.surplus=@"收入";
+                    [needArray addObject:model];
+                }
             }
         }
     }
@@ -90,6 +104,13 @@
             getModel=dataFromSQLArray[index];
             if ([[YLTimeDeal dealMonthString:getModel.dateNow]isEqualToString:name]) {
                 dayCost+=[getModel.getMoney doubleValue];
+                if (dataFromSQLArray.count==index+1) {
+                    YLBudgeModel *model=[[YLBudgeModel alloc]init];
+                    model.name=name;
+                    model.budget=[NSString stringWithFormat:@"%.1lf",dayCost];
+                    model.surplus=@"收入";
+                    [needArray addObject:model];
+                }
             }else{
                 YLBudgeModel *model=[[YLBudgeModel alloc]init];
                 model.name=name;
@@ -100,6 +121,13 @@
                 name=[YLTimeDeal dealMonthString:getModel.dateNow];
                 dayCost=0;
                 dayCost+=[getModel.getMoney doubleValue];
+                if (dataFromSQLArray.count==index+1) {
+                    YLBudgeModel *model=[[YLBudgeModel alloc]init];
+                    model.name=name;
+                    model.budget=[NSString stringWithFormat:@"%.1lf",dayCost];
+                    model.surplus=@"收入";
+                    [needArray addObject:model];
+                }
             }
         }
     }
@@ -155,6 +183,13 @@
         costModel=dataFromSQLArray[index];
         if ([[YLTimeDeal dealString:costModel.dateNow]isEqualToString:name]) {
             dayCost+=[costModel.costMoney doubleValue];
+            if (dataFromSQLArray.count==index+1) {
+                YLBudgeModel *model=[[YLBudgeModel alloc]init];
+                model.name=name;
+                model.budget=[NSString stringWithFormat:@"%.1lf",dayCost];
+                model.surplus=@"支出";
+                [needArray addObject:model];
+            }
         }else{
             YLBudgeModel *model=[[YLBudgeModel alloc]init];
             model.name=name;
@@ -166,6 +201,13 @@
             name=[YLTimeDeal dealString:costModel.dateNow];
             dayCost=0;
             dayCost+=[costModel.costMoney doubleValue];
+            if (dataFromSQLArray.count==index+1) {
+                YLBudgeModel *model=[[YLBudgeModel alloc]init];
+                model.name=name;
+                model.budget=[NSString stringWithFormat:@"%.1lf",dayCost];
+                model.surplus=@"支出";
+                [needArray addObject:model];
+            }
         }
     }
     }
@@ -193,6 +235,13 @@
             costModel=dataFromSQLArray[index];
             if ([[YLTimeDeal dealMonthString:costModel.dateNow]isEqualToString:name]) {
                 dayCost+=[costModel.costMoney doubleValue];
+                if (dataFromSQLArray.count==index+1) {
+                    YLBudgeModel *model=[[YLBudgeModel alloc]init];
+                    model.name=name;
+                    model.budget=[NSString stringWithFormat:@"%.1lf",dayCost];
+                    model.surplus=@"支出";
+                    [needArray addObject:model];
+                }
             }else{
                 YLBudgeModel *model=[[YLBudgeModel alloc]init];
                 model.name=name;
@@ -204,6 +253,13 @@
                 name=[YLTimeDeal dealMonthString:costModel.dateNow];
                 dayCost=0;
                 dayCost+=[costModel.costMoney doubleValue];
+                if (dataFromSQLArray.count==index+1) {
+                    YLBudgeModel *model=[[YLBudgeModel alloc]init];
+                    model.name=name;
+                    model.budget=[NSString stringWithFormat:@"%.1lf",dayCost];
+                    model.surplus=@"支出";
+                    [needArray addObject:model];
+                }
             }
         }
     }
