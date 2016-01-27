@@ -74,8 +74,8 @@
     NSDate *monthBigen=[YLTimeDeal dealTimeDate:date];
     NSDate *nextMonthBigene=[monthBigen dateByAddingMonths:1];
     NSDate *monthEnd=[nextMonthBigene dateBySubtractingDays:1];
-    NSString *firstString=[self dateShowDeal:[monthBigen formattedDateWithStyle: NSDateFormatterFullStyle]];
-    NSString *endString=[self dateShowDeal:[monthEnd formattedDateWithStyle: NSDateFormatterFullStyle]];
+    NSString *firstString=[self chinaTimeShow:monthBigen];
+    NSString *endString=[self chinaTimeShow:monthEnd];
     dateLabel.text = [NSString stringWithFormat:@"%@~%@",firstString,endString];
     [monthView addSubview:dateLabel];
     [dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -126,10 +126,10 @@
     dateLabel.textAlignment=NSTextAlignmentLeft;
     dateLabel.textColor=[UIColor lightGrayColor];
     NSDate * date = [NSDate date];
-    NSDate  *weekBigen=[date dateBySubtractingDays:date.weekdayOrdinal];
+    NSDate  *weekBigen=[date dateBySubtractingDays:date.weekdayOrdinal-1];
     NSDate  *weekEnd=[weekBigen dateByAddingDays:7];
-    NSString *firstString=[self dateShowDeal:[weekBigen formattedDateWithStyle: NSDateFormatterFullStyle]];
-    NSString *endString=[self dateShowDeal:[weekEnd formattedDateWithStyle: NSDateFormatterFullStyle]];
+    NSString *firstString=[self chinaTimeShow:weekBigen];
+    NSString *endString=[self chinaTimeShow:weekEnd];
     dateLabel.text = [NSString stringWithFormat:@"%@~%@",firstString,endString];
     [weekView addSubview:dateLabel];
     [dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -180,7 +180,12 @@
     dateLabel.textAlignment=NSTextAlignmentLeft;
     dateLabel.textColor=[UIColor lightGrayColor];
     NSDate * date = [NSDate date];
-    dateLabel.text = [self dateShowDeal:[date formattedDateWithStyle: NSDateFormatterFullStyle]];
+    NSString *dataStr1=[date formattedDateWithFormat:@"YYYY/MM/dd HH:mm:ss"];
+    NSArray *array=[dataStr1 componentsSeparatedByString:@" "];
+    NSString *string=[array firstObject];
+    NSArray *lastArray=[string componentsSeparatedByString:@"/"];
+    NSString *dataStr=[NSString stringWithFormat:@"%@年%@月%@日",lastArray[0],lastArray[1],lastArray[2]];
+    dateLabel.text = dataStr;
     [dayView addSubview:dateLabel];
     [dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(dayView.mas_left).offset(3);
@@ -261,5 +266,12 @@
     NSArray *nextArray=[firstString componentsSeparatedByString:@"年"];
     return [nextArray lastObject];
 }
-
+-(NSString *)chinaTimeShow:(NSDate*)date{
+    NSString *dataStr1=[date formattedDateWithFormat:@"YYYY/MM/dd HH:mm:ss"];
+    NSArray *array=[dataStr1 componentsSeparatedByString:@" "];
+    NSString *string=[array firstObject];
+    NSArray *lastArray=[string componentsSeparatedByString:@"/"];
+    NSString *dataStr=[NSString stringWithFormat:@"%@月%@日",lastArray[1],lastArray[2]];
+    return dataStr;
+}
 @end
