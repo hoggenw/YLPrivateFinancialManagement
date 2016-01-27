@@ -12,7 +12,6 @@
 		BC2076711C46678D00111CD3 /* YLDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076701C46678D00111CD3 /* YLDataBaseManager.m */; };
 		BC2076DF1C46787200111CD3 /* YLCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076DE1C46787200111CD3 /* YLCostModel.m */; };
 		BC2076E21C46799200111CD3 /* YLGetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076E11C46799200111CD3 /* YLGetModel.m */; };
-		BC2076E51C4681B400111CD3 /* half_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2076E41C4681B400111CD3 /* half_bg@2x.png */; };
 		BC2076E91C4728E700111CD3 /* YLCostButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076E81C4728E700111CD3 /* YLCostButton.m */; };
 		BC2076EC1C47294F00111CD3 /* YLCostView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2076EB1C47294F00111CD3 /* YLCostView.m */; };
 		BC2076EF1C474C6200111CD3 /* addButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2076EE1C474C6200111CD3 /* addButton@2x.png */; };
@@ -27,6 +26,7 @@
 		BC22F0AC1C533016007F715A /* YLCostModelSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC22F0AB1C533016007F715A /* YLCostModelSetViewController.m */; };
 		BC22F0B01C534273007F715A /* YLMyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC22F0AF1C534273007F715A /* YLMyCollectionViewCell.m */; };
 		BC22F0B21C534444007F715A /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC22F0B11C534444007F715A /* close@2x.png */; };
+		BC4672CE1C5852EA00E8524A /* half_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4672CD1C5852EA00E8524A /* half_bg@2x.png */; };
 		BC487DF31C3E5F9800C7C994 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC487DF21C3E5F9800C7C994 /* bg1.jpg */; };
 		BC487DF81C3E877E00C7C994 /* YLCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC487DF71C3E877E00C7C994 /* YLCenterView.m */; };
 		BC487DFA1C3E947300C7C994 /* orange_color.png in Resources */ = {isa = PBXBuildFile; fileRef = BC487DF91C3E947300C7C994 /* orange_color.png */; };
@@ -121,7 +121,6 @@
 		BC2076DE1C46787200111CD3 /* YLCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostModel.m; sourceTree = "<group>"; };
 		BC2076E01C46799200111CD3 /* YLGetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGetModel.h; sourceTree = "<group>"; };
 		BC2076E11C46799200111CD3 /* YLGetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGetModel.m; sourceTree = "<group>"; };
-		BC2076E41C4681B400111CD3 /* half_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "half_bg@2x.png"; path = "../half_bg@2x.png"; sourceTree = "<group>"; };
 		BC2076E71C4728E700111CD3 /* YLCostButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostButton.h; sourceTree = "<group>"; };
 		BC2076E81C4728E700111CD3 /* YLCostButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCostButton.m; sourceTree = "<group>"; };
 		BC2076EA1C47294F00111CD3 /* YLCostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCostView.h; sourceTree = "<group>"; };
@@ -143,6 +142,7 @@
 		BC22F0AE1C534273007F715A /* YLMyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMyCollectionViewCell.h; sourceTree = "<group>"; };
 		BC22F0AF1C534273007F715A /* YLMyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMyCollectionViewCell.m; sourceTree = "<group>"; };
 		BC22F0B11C534444007F715A /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		BC4672CD1C5852EA00E8524A /* half_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "half_bg@2x.png"; sourceTree = "<group>"; };
 		BC487DF21C3E5F9800C7C994 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
 		BC487DF61C3E877E00C7C994 /* YLCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCenterView.h; sourceTree = "<group>"; };
 		BC487DF71C3E877E00C7C994 /* YLCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCenterView.m; sourceTree = "<group>"; };
@@ -525,7 +525,7 @@
 		BC8B1B751C3D446C00665523 /* bg */ = {
 			isa = PBXGroup;
 			children = (
-				BC2076E41C4681B400111CD3 /* half_bg@2x.png */,
+				BC4672CD1C5852EA00E8524A /* half_bg@2x.png */,
 				BC6686CC1C56280F004E086D /* most_pretty.png */,
 				BC6686C21C560CC8004E086D /* button_bar.png */,
 				BC22F0B11C534444007F715A /* close@2x.png */,
@@ -845,6 +845,7 @@
 			files = (
 				BC2076F11C477D5C00111CD3 /* doneBuBG.png in Resources */,
 				BC56E8F81C4FACF1003FB734 /* button_bg.png in Resources */,
+				BC4672CE1C5852EA00E8524A /* half_bg@2x.png in Resources */,
 				BC660B3A1C563D4A00813A69 /* button_budget.png in Resources */,
 				BC8B1B581C3D14AC00665523 /* yuyin.png in Resources */,
 				BC660B341C5634A100813A69 /* bg2.png in Resources */,
@@ -854,7 +855,6 @@
 				BC5E13611C52595E0079AA42 /* cost.png in Resources */,
 				BC660B361C56356100813A69 /* button_barbar.png in Resources */,
 				BC5E135D1C524E400079AA42 /* scrollBG.png in Resources */,
-				BC2076E51C4681B400111CD3 /* half_bg@2x.png in Resources */,
 				BC660B321C56328C00813A69 /* buttonbar@2x.png in Resources */,
 				BC2076EF1C474C6200111CD3 /* addButton@2x.png in Resources */,
 				BC5E12711C50D85F0079AA42 /* right_bg.png in Resources */,
