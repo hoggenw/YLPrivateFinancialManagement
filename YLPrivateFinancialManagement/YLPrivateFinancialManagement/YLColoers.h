@@ -13,4 +13,9 @@
  *  创建一个颜色数组
  */
 +(NSArray *)returnColorsForPicture;
+
+/**
+ *  是否已经存在相同类别
+ */
++(BOOL)jusdgeIfDiffrentNameInArray:(NSArray*)nameArray  name:(NSString*)name;
 @end

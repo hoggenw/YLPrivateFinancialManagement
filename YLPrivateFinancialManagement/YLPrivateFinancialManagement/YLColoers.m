@@ -25,4 +25,15 @@
     UIColor *color10=[UIColor colorWithRed:252/255.0 green:38/255.0 blue:251/255.0 alpha:1];
     return @[color1,color2,color3,[UIColor magentaColor],color4,color5,color6,color7,color8,color9,color10,[UIColor yellowColor],[UIColor greenColor],[UIColor cyanColor]];
 }
+/**
+ *  是否已经存在相同类别
+ */
++(BOOL)jusdgeIfDiffrentNameInArray:(NSArray*)nameArray  name:(NSString*)name{
+    for (int index=0; index<nameArray.count; index++) {
+        if ([nameArray[index] isEqualToString:name]) {
+            return YES;
+        }
+    }
+    return NO;
+}
 @end

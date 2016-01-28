@@ -35,7 +35,7 @@
             make.centerX.equalTo(superView.mas_centerX);
             make.left.equalTo(superView.mas_left).offset(60);
             make.right.equalTo(superView.mas_right).offset(-60);
-            make.top.equalTo(monthView.mas_bottom).offset(10+index*40+index*5);
+            make.top.equalTo(monthView.mas_bottom).offset(10+index*40+index*3);
             make.height.equalTo(@(40));
         }];
         

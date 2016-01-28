@@ -8,6 +8,7 @@
 
 #import "YLCostModelKindSetViewController.h"
 #import "YLMyCollectionViewCell.h"
+#import "YLHintView.h"
 @interface YLCostModelKindSetViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITextFieldDelegate>{
      UIImageView *selfBackView;
     UIView *collectionBackView;
@@ -132,6 +133,7 @@
     NSString *name=dataArray[indexPath.row];
     NSArray *costArray=[YLNsuserD getArrayForKey:@"costArray"];
     [dataArray removeObject:name];
+    [[YLDataBaseManager shareManager]deletYLCostDataByKind:name];
     [dataArray addObject:@"点击新增项目+"];
     NSMutableArray *changeArray=[NSMutableArray arrayWithArray:costArray];
     NSDictionary *dict=@{[self dealNeedString:_kindname]:dataArray};
@@ -173,6 +175,20 @@
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         UITextField *textField = [ac.textFields firstObject];//可以创建很多个
         NSString *name = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        NSMutableArray *nameArray=[NSMutableArray array];
+        for (int index=0;index<myArray.count;index++){
+            NSDictionary *temp=myArray[index];
+            if ([[self dealNeedString:_kindname]isEqualToString:[[temp allKeys]firstObject]]) {
+                nameArray=[temp[[self dealNeedString:_kindname]]mutableCopy];
+            }
+        }
+        if ([YLColoers jusdgeIfDiffrentNameInArray:nameArray name:name]) {
+            YLHintView *hView=[[YLHintView alloc]initWithFrame:CGRectMake(0, 0,150, 120)];
+            hView.center=self.view.center;
+            [self.view addSubview:hView];
+            hView.message=@"已存在相同类别";
+            [hView showOnView:self.view ForTimeInterval:1.5];
+        }else{
         if (![name isEqualToString: @""]) {
             [dataArray addObject:name];
             NSMutableArray *dictArray=[NSMutableArray arrayWithArray:dataArray];
@@ -197,7 +213,7 @@
         }else{
             
         }
-        
+        }
         
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];

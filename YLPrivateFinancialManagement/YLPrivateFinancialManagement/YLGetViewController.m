@@ -40,7 +40,7 @@
     //月
     CGFloat getMonth=[YLTimeDeal getThisMonthTotal];
     [costCreatView creatMonthCostOrGetView:bgImageView name:@"本月收入" total:getMonth];
-    NSArray *nameArray=@[@"逐日收入",@"逐月收入",@"收入一笔",@"设置预算",@"设置模板"];
+    NSArray *nameArray=@[@"逐日收入",@"逐月收入",@"收入一笔",@"设置模板"];
     [costCreatView creatFiveButtonForCostOrGetView:bgImageView nameArray:nameArray];
     [self buttonClicked];
 }
@@ -48,15 +48,15 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)buttonClicked{
-    UIButton *button=(id)[imageDown viewWithTag:703];
-    [button addTarget:self action:@selector(buttonClickedToBudget:) forControlEvents:UIControlEventTouchUpInside];
+    //UIButton *button=(id)[imageDown viewWithTag:703];
+   // [button addTarget:self action:@selector(buttonClickedToBudget:) forControlEvents:UIControlEventTouchUpInside];
     UIButton *getButton=(id)[imageDown viewWithTag:702];
     [getButton addTarget:self action:@selector(buttonClickedToGetOne:) forControlEvents:UIControlEventTouchUpInside];
     UIButton *getButtonDay=(id)[imageDown viewWithTag:700];
     [getButtonDay addTarget:self action:@selector(buttonClickedToGetDay:) forControlEvents:UIControlEventTouchUpInside];
     UIButton *getButtonMonth=(id)[imageDown viewWithTag:701];
     [getButtonMonth addTarget:self action:@selector(buttonClickedToGetMonth:) forControlEvents:UIControlEventTouchUpInside];
-    UIButton *modelButton=(id)[imageDown viewWithTag:704];
+    UIButton *modelButton=(id)[imageDown viewWithTag:703];
     [modelButton addTarget:self action:@selector(modelButtonActon:) forControlEvents:UIControlEventTouchUpInside];
 }
 //设置模板的按钮回调

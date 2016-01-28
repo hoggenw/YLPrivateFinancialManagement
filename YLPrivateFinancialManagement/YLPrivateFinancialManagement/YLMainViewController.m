@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    
     //设置控制视图
     YLfirstView *master=[[YLfirstView alloc]init];
     YLProgressView *progressView=[[YLProgressView alloc]init];

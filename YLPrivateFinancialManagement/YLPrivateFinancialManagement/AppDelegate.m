@@ -40,7 +40,7 @@
         NSDictionary *Dict5=@{@"医教支出":@[@"医药花费",@"培训考试",@"保险支出",@"点击新增项目+"]};
         NSDictionary *Dict6=@{@"人情支出":@[@"礼金红包",@"请客",@"孝敬父母",@"捐款",@"赠与",@"点击新增项目+"]};
         NSDictionary *Dict7=@{@"居家支出":@[@"电话费",@"房贷房租",@"水电燃气",@"化妆美容",@"物业",@"其他杂费",@"点击新增项目+"]};
-        NSDictionary *dict8=@{@"点击新增内容+":@[]};
+        NSDictionary *dict8=@{@"点击新增内容+":@[@"点击新增项目+"]};
         NSArray *costArray=@[Dict1,Dict2,Dict3,Dict4,Dict5,Dict6,Dict7,dict8];
         [YLNsuserD saveArray:costArray forKey:@"costArray"];
         NSArray  *getArray=@[@"工资薪水",@"奖金",@"兼职外快",@"福利补贴",@"礼金红包",@"利息",@"基金股票",@"盈利",@"其他",@"点击新增项目+"];

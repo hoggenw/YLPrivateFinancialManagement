@@ -38,7 +38,7 @@
     //月
     CGFloat monthCost=[YLTimeDeal costThisMonthTotal];
     [costCreatView creatMonthCostOrGetView:bgImageView name:@"本月支出" total:monthCost];
-    NSArray *nameArray=@[@"逐日支出",@"逐月支出",@"支出一笔",@"设置预算",@"设置模板"];
+    NSArray *nameArray=@[@"逐日支出",@"逐月支出",@"支出一笔",@"设置模板"];
     [costCreatView creatFiveButtonForCostOrGetView:bgImageView nameArray:nameArray];
     //按键回调
     [self buttonClicked];
@@ -57,15 +57,15 @@
 }
 #pragma mark-方法回调
 -(void)buttonClicked{
-    UIButton *button=(id)[imageDown viewWithTag:703];
-    [button addTarget:self action:@selector(buttonClickedToBudget:) forControlEvents:UIControlEventTouchUpInside];
+   // UIButton *button=(id)[imageDown viewWithTag:703];
+   // [button addTarget:self action:@selector(buttonClickedToBudget:) forControlEvents:UIControlEventTouchUpInside];
     UIButton *costButton=(id)[imageDown viewWithTag:702];
     [costButton addTarget:self action:@selector(buttonClickedToCostOne:) forControlEvents:UIControlEventTouchUpInside];
     UIButton *costButtonDay=(id)[imageDown viewWithTag:700];
     [costButtonDay addTarget:self action:@selector(buttonClickedToCostDay:) forControlEvents:UIControlEventTouchUpInside];
     UIButton *costButtonMonth=(id)[imageDown viewWithTag:701];
     [costButtonMonth addTarget:self action:@selector(buttonClickedToCostMonth:) forControlEvents:UIControlEventTouchUpInside];
-    UIButton *modelButton=(id)[imageDown viewWithTag:704];
+    UIButton *modelButton=(id)[imageDown viewWithTag:703];
     [modelButton addTarget:self action:@selector(modelButtonActon:) forControlEvents:UIControlEventTouchUpInside];
     
 }

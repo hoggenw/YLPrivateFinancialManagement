@@ -208,6 +208,21 @@
     }
     return [models copy];
 }
+/**按照种类名称删除收入数据*/
+-(BOOL)deletYLGetDataByKind:(NSString *)name{
+    BOOL success=[_fmdb executeUpdate:@"delete from GETTabel where kind=?",name];
+    return success;
+}
+/**按照大类名称删除支出数据*/
+-(BOOL)deletYLCostDataByClass:(NSString *)name{
+    BOOL success =[ _fmdb executeUpdate:@"DELETE from COSTTabel where bigClass=?",name ];
+    return success;
+}
+/**按照种类名称删除支出数据*/
+-(BOOL)deletYLCostDataByKind:(NSString *)name{
+    BOOL success =[ _fmdb executeUpdate:@"DELETE from COSTTabel where kind=?",name];
+    return success;
+}
 @end
 
 

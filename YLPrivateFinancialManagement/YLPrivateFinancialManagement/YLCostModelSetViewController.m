@@ -10,6 +10,7 @@
 #import "YLPieReportView.h"
 #import "YLMyCollectionViewCell.h"
 #import "YLCostModelKindSetViewController.h"
+#import "YLHintView.h"
 #define MAX_WORDS 100
 @interface YLCostModelSetViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITextFieldDelegate>{
     UIImageView *selfBackView;
@@ -206,12 +207,14 @@
     NSIndexPath *indexPath=[_collectionView indexPathForCell:cell];
     NSString *name=dataArray[indexPath.row];
     NSArray *costArray=[YLNsuserD getArrayForKey:@"costArray"];
+    
     NSMutableArray *changeArray=[NSMutableArray arrayWithArray:costArray];
     NSDictionary *dict=[NSDictionary dictionary];
     for (NSDictionary *temp in changeArray) {
         NSString *sttrName=[[temp allKeys]firstObject];
         if ([sttrName isEqualToString:name]) {
             dict=temp;
+            [[YLDataBaseManager shareManager]deletYLCostDataByClass:name];
             break;
         }
     }
@@ -246,6 +249,18 @@
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         UITextField *textField = [ac.textFields firstObject];//可以创建很多个
         NSString *name = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        NSMutableArray *nameArray=[NSMutableArray array];
+        for (int index=0; index<myArray.count; index++) {
+            NSDictionary *dicts=myArray[index];
+            [nameArray addObject:[[dicts allKeys]firstObject]];
+        }
+        if ([YLColoers jusdgeIfDiffrentNameInArray:nameArray name:name]) {
+            YLHintView *hView=[[YLHintView alloc]initWithFrame:CGRectMake(0, 0,150, 120)];
+            hView.center=self.view.center;
+            [self.view addSubview:hView];
+            hView.message=@"已存在相同类别";
+            [hView showOnView:self.view ForTimeInterval:1.5];
+        }else{
         if (![name isEqualToString: @""]) {
             NSDictionary *dict=@{name:@[@"点击新增项目+"]};
             NSInteger insertPlace=((int)myArray.count-2)<0?0:(myArray.count-2);
@@ -261,7 +276,7 @@
         }else{
             
         }
-     
+        }
         
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];

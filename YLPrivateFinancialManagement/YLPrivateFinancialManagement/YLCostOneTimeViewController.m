@@ -526,6 +526,18 @@ typedef NS_ENUM(NSInteger, SHOWMODEL){
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             UITextField *textField = [ac.textFields firstObject];//可以创建很多个
             NSString *name = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+            NSMutableArray *nameArray=[NSMutableArray array];
+            for (int index=0; index<myArray.count; index++) {
+                NSDictionary *dicts=myArray[index];
+                [nameArray addObject:[[dicts allKeys]firstObject]];
+            }
+            if ([YLColoers jusdgeIfDiffrentNameInArray:nameArray name:name]) {
+                YLHintView *hView=[[YLHintView alloc]initWithFrame:CGRectMake(0, 0,150, 120)];
+                hView.center=self.view.center;
+                [self.view addSubview:hView];
+                 hView.message=@"已存在相同类别";
+                [hView showOnView:self.view ForTimeInterval:1.5];
+            }else{
              if (![name isEqualToString: @""]) {
             NSDictionary *dict=@{name:@[@"点击新增项目+"]};
             NSInteger insertPlace=tableViewArray.count-1;
@@ -547,7 +559,7 @@ typedef NS_ENUM(NSInteger, SHOWMODEL){
              }else{
                  
              }
-            
+            }
         }];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
         [ac addAction:okAction];
@@ -567,6 +579,20 @@ typedef NS_ENUM(NSInteger, SHOWMODEL){
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         UITextField *textField = [ac.textFields firstObject];//可以创建很多个
         NSString *name = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+            NSMutableArray *nameArray=[NSMutableArray array];
+            for (int index=0;index<myArray.count;index++){
+                NSDictionary *temp=myArray[index];
+                if ([mainButton.titleLabel.text isEqualToString:[[temp allKeys]firstObject]]) {
+                    nameArray=[temp[mainButton.titleLabel.text]mutableCopy];
+                }
+            }
+            if ([YLColoers jusdgeIfDiffrentNameInArray:nameArray name:name]) {
+                YLHintView *hView=[[YLHintView alloc]initWithFrame:CGRectMake(0, 0,150, 120)];
+                hView.center=self.view.center;
+                [self.view addSubview:hView];
+                hView.message=@"已存在相同类别";
+                [hView showOnView:self.view ForTimeInterval:1.5];
+            }else{
              if (![name isEqualToString: @""]) {
             NSInteger insertPlace=tableViewArray.count-1;
             [tableViewArray insertObject:name atIndex:insertPlace];
@@ -592,6 +618,7 @@ typedef NS_ENUM(NSInteger, SHOWMODEL){
              }else{
                  
              }
+            }
         }];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
         [ac addAction:okAction];

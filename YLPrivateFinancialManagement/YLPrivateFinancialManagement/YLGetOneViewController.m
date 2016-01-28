@@ -421,6 +421,13 @@
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             UITextField *textField = [ac.textFields firstObject];//可以创建很多个
             NSString *name = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+            if ([YLColoers jusdgeIfDiffrentNameInArray:myArray name:name]) {
+                YLHintView *hView=[[YLHintView alloc]initWithFrame:CGRectMake(0, 0,150, 120)];
+                hView.center=self.view.center;
+                [self.view addSubview:hView];
+                hView.message=@"已存在相同类别";
+                [hView showOnView:self.view ForTimeInterval:1.5];
+            }else{
              if (![name isEqualToString: @""]) {
             NSInteger insertPlace=tableViewArray.count-1;
             [tableViewArray insertObject:name atIndex:insertPlace];
@@ -435,7 +442,7 @@
             [numberView removeFromSuperview];
             numberView=nil;
              }else{
-                 
+             }
              }
         }];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];

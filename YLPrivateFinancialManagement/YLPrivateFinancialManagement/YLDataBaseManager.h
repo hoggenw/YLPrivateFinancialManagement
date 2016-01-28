@@ -39,4 +39,10 @@
 -(NSArray *)selectCostModelByName:(NSString *)name;
 /**根据种类名称获得收入数据*/
 -(NSArray *)selectGetModelByName:(NSString *)name;
+/**按照种类名称删除收入数据*/
+-(BOOL)deletYLGetDataByKind:(NSString *)name;
+/**按照大类名称删除支出数据*/
+-(BOOL)deletYLCostDataByClass:(NSString *)name;
+/**按照种类名称删除支出数据*/
+-(BOOL)deletYLCostDataByKind:(NSString *)name;
 @end
