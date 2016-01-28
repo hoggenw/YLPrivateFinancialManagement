@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
     //设置导航栏
     self.title=@"旺旺记账";
     self.view.backgroundColor=[UIColor whiteColor];
