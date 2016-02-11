@@ -98,6 +98,7 @@
 		BCEAAA6A1C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAA691C3BD9F100CEB816 /* YLPrivateFinancialManagementTests.m */; };
 		BCEAAAF91C3BEC8900CEB816 /* YLfirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAAF81C3BEC8900CEB816 /* YLfirstView.m */; };
 		BCEAAAFC1C3BEE6F00CEB816 /* YLMyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEAAAFB1C3BEE6F00CEB816 /* YLMyButton.m */; };
+		E8E2E9BD1C68951100C56ABC /* YLDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2E9BC1C68951100C56ABC /* YLDatePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -253,6 +254,8 @@
 		BCEAAAFA1C3BEE6F00CEB816 /* YLMyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMyButton.h; sourceTree = "<group>"; };
 		BCEAAAFB1C3BEE6F00CEB816 /* YLMyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMyButton.m; sourceTree = "<group>"; };
 		C9DC00B195042DF13123DC52 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E8E2E9BB1C6894FF00C56ABC /* YLDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDatePickerViewController.h; sourceTree = "<group>"; };
+		E8E2E9BC1C68951100C56ABC /* YLDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDatePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,6 +554,8 @@
 			children = (
 				BC65E0C81C448AD600C44BC6 /* YLCostOneTimeViewController.h */,
 				BC65E0C91C448AD600C44BC6 /* YLCostOneTimeViewController.m */,
+				E8E2E9BB1C6894FF00C56ABC /* YLDatePickerViewController.h */,
+				E8E2E9BC1C68951100C56ABC /* YLDatePickerViewController.m */,
 			);
 			name = "支出一笔页面";
 			sourceTree = "<group>";
@@ -967,6 +972,7 @@
 				BC5E125E1C50709F0079AA42 /* YLDataDeal.m in Sources */,
 				BC6686BF1C55CB80004E086D /* YLRESideViewController.m in Sources */,
 				BC22F0AC1C533016007F715A /* YLCostModelSetViewController.m in Sources */,
+				E8E2E9BD1C68951100C56ABC /* YLDatePickerViewController.m in Sources */,
 				BC56E8EF1C4F7265003FB734 /* YLCostVew.m in Sources */,
 				BCEAAAFC1C3BEE6F00CEB816 /* YLMyButton.m in Sources */,
 				BC65E0D51C4499D500C44BC6 /* YLBudgetViewController.m in Sources */,

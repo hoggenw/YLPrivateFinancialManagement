@@ -11,6 +11,7 @@
 #import "YLCostView.h"
 #import "YLCostButton.h"
 #import "YLHintView.h"
+#import "YLDatePickerViewController.h"
 #define MAX_WORDS 100
 @interface YLGetOneViewController ()<UITextViewDelegate,UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>{
     YLGetModel *model;
@@ -455,43 +456,15 @@
 }
 //创建选着时间的方法
 -(void)creatDatePicker{
-    UIDatePicker *datePicker=[[UIDatePicker alloc]init];
-    [numberView addSubview:datePicker];
-    datePicker.date=[NSDate date];
-    NSTimeInterval halfYearInterval = 365 * 24 * 60 * 60;
-    NSDate *today = [NSDate date];
-    NSDate *halfYearFromToday = [today dateByAddingTimeInterval:halfYearInterval];
-    [datePicker setDatePickerMode:UIDatePickerModeDate];
-    datePicker.maximumDate = halfYearFromToday;
-    [datePicker mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(numberView).insets(UIEdgeInsetsMake(0, 0, 0, 0));
-    }];
+    YLDatePickerViewController *dateVC=[[YLDatePickerViewController alloc]init];
+    dateVC.myDatePicker=^(NSDate *mainkeyString,NSString *dataSt){
+        model.mainKey=mainkeyString;
+       YLCostButton *timeButton=(id)[view viewWithTag:511];
+        timeButton.titleLabel.text=dataSt;
+        [timeButton setTitle:dataSt forState:UIControlStateNormal];
+    };
+    [self.navigationController pushViewController:dateVC animated:YES];
     
-    [datePicker addTarget:self action:@selector(datePickerChange:) forControlEvents:UIControlEventValueChanged];
-    
-    
-}
-- (void)datePickerChange:(UIDatePicker *)paramPicker{
-    YLCostButton *timeButton=(id)[view viewWithTag:511];
-    NSDate *select=paramPicker.date;
-    //转化主键格式与当前时间时分秒对应确保唯一主键
-    NSDate *nowDate=[NSDate date];
-    NSString *selectString=[select formattedDateWithFormat:@"YYYY/MM/dd HH:mm:ss"];
-    NSString  *nowDateSting=[nowDate formattedDateWithFormat:@"YYYY/MM/dd HH:mm:ss"];
-    NSMutableString *timeString=[NSMutableString string];
-    NSArray *selectStringArray=[selectString componentsSeparatedByString:@" "];
-    NSArray *nowDateStingArray=[nowDateSting componentsSeparatedByString:@" "];
-    NSString *need1=[selectStringArray firstObject] ;
-    NSString *need2=[nowDateStingArray lastObject];
-    timeString=[NSMutableString stringWithString:[NSString stringWithFormat:@"%@ %@",need1,need2]];
-    NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
-    
-    model.mainKey=[formatter dateFromString:timeString];
-    
-    NSString *dataStr=[select formattedDateWithStyle:NSDateFormatterFullStyle];
-    timeButton.titleLabel.text=dataStr;
-    [timeButton setTitle:dataStr forState:UIControlStateNormal];;
 }
 #pragma mark-获得日期
 -(NSString *)getDateNow{
